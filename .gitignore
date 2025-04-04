@@ -7,6 +7,9 @@ models/
 # 환경 변수 파일
 .env
 
+# 가성 환경
+clean-env/
+
 # Python 캐시
 __pycache__/
 *.pyc
