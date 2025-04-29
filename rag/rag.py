@@ -1,5 +1,5 @@
+# rag/rag.py
 from langchain.chains import RetrievalQA
-# from langchain_community.llms import Ollama
 from langchain_ollama import OllamaLLM
 from utils.env_loader import load_env
 
@@ -9,5 +9,6 @@ def build_rag_chain(retriever):
     return RetrievalQA.from_chain_type(
         llm=llm,
         retriever=retriever,
-        chain_type="stuff"
+        chain_type="stuff",
+        return_source_documents=True,    # ← add this
     )
