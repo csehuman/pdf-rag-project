@@ -17,7 +17,7 @@ if __name__ == "__main__":
     
     # 3) Build retriever & QA chain as before
     retriever = build_retriever(documents)
-    qa_chain  = build_rag_chain(retriever)
+    qa_chain  = build_rag_chain(retriever, "stuff", "default")
 
     # 4) Ask user, run the chain, unpack answer + sources
     query  = input("질문 ▶ ")
