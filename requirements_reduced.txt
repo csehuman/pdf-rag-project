@@ -54,6 +54,7 @@ jsonschema-specifications==2024.10.1
 langchain==0.3.22
 langchain-community==0.3.20
 langchain-core==0.3.50
+langchain-ollama==0.3.2
 langchain-text-splitters==0.3.7
 langsmith==0.3.24
 latex2mathml==3.77.0
@@ -66,6 +67,7 @@ llama-index-cli==0.4.1
 llama-index-core==0.12.28
 llama-index-embeddings-openai==0.3.1
 llama-index-indices-managed-llama-cloud==0.6.11
+llama-index-llms-ollama==0.5.4
 llama-index-llms-openai==0.3.30
 llama-index-multi-modal-llms-openai==0.4.3
 llama-index-program-openai==0.3.1
