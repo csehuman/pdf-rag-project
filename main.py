@@ -13,7 +13,11 @@ BASE_DIR         = os.path.dirname(__file__)
 FAISS_STORE_PATH = os.path.join(BASE_DIR, "faiss_store")
 
 # the exact same embedding you used in build_index.py
-EMBED_MODEL = HuggingFaceEmbeddings(model_name="dragonkue/BGE-m3-ko")
+EMBED_MODEL = HuggingFaceEmbeddings(
+    model_name="dragonkue/BGE-m3-ko",
+    model_kwargs={"device": "mps"}, 
+    encode_kwargs={"normalize_embeddings": True}
+)
 
 def inspect_faiss():
     """
@@ -71,10 +75,10 @@ if __name__ == "__main__":
     # clear_faiss()
 
     # 3) Load retriever + RAG chain
-    # retriever = build_retriever(documents)
+    start = time.time()
     retriever = load_retriever(k=5)
+    print(f"load_retriever: {time.time() - start:.2f}s")
     qa_chain  = build_rag_chain(retriever, "stuff", "default")
-
 
     # 4) Query + measure time
     query = input("질문 ▶ ")
@@ -86,10 +90,10 @@ if __name__ == "__main__":
     print(f"\n⏱️ Answer time: {elapsed:.2f} seconds\n")
 
     # 6) Show retrieved chunks
-    print("📂 Retrieved chunks:")
-    for i, doc in enumerate(result["source_documents"], 1):
-        content = getattr(doc, "page_content", None) or getattr(doc, "text", "")
-        print(f"\n--- chunk #{i} ---\n{content}")
+    # print("📂 Retrieved chunks:")
+    # for i, doc in enumerate(result["source_documents"], 1):
+    #     content = getattr(doc, "page_content", None) or getattr(doc, "text", "")
+    #     print(f"\n--- chunk #{i} ---\n{content}")
 
     # 7) Finally the LLM’s answer
     print("\n📘 답변:", result["result"])
