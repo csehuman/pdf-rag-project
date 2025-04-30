@@ -1,5 +1,5 @@
-import os
 # import io
+import os
 import glob
 import fitz  # PyMuPDF
 import tempfile
@@ -14,9 +14,9 @@ from docling.datamodel.base_models import InputFormat
 from docling.datamodel.pipeline_options import PdfPipelineOptions
 from docling.document_converter import PdfFormatOption
 
-# 디버깅 이미지 저장 폴더
-DEBUG_IMAGE_FOLDER = "debug_pages"
-os.makedirs(DEBUG_IMAGE_FOLDER, exist_ok=True)
+# # 디버깅 이미지 저장 폴더
+# DEBUG_IMAGE_FOLDER = "debug_pages"
+# os.makedirs(DEBUG_IMAGE_FOLDER, exist_ok=True)
 
 # Docling 설정
 converter = DocumentConverter(
@@ -74,6 +74,16 @@ def is_extraction_failed(text: str, min_length=30) -> bool:
     return len(text.strip()) < min_length or "표" in text[:20]
 
 def extract_text_from_pdf(pdf_path: str) -> str:
+    output_dir = "output"
+    os.makedirs(output_dir, exist_ok=True)
+    filename = os.path.splitext(os.path.basename(pdf_path))[0]
+    output_file = os.path.join(output_dir, f"{filename}.md")
+
+    if os.path.exists(output_file):
+        print(f"[SKIP] 이미 처리된 파일: {output_file}")
+        with open(output_file, 'r', encoding='utf-8') as f:
+            return f.read()
+
     result_text = []
     doc = fitz.open(pdf_path)
     num_pages = len(doc)
@@ -110,10 +120,7 @@ def extract_text_from_pdf(pdf_path: str) -> str:
             print(f"[ERROR] {i+1}쪽 처리 실패 → OCR 적용: {e}")
             # text = apply_ocr_to_pdf_page(pdf_path, i)
             # result_text.append(f"{page_header} [OCR]\n\n{text}")
-
-    filename = os.path.splitext(os.path.basename(pdf_path))[0]
-    os.makedirs("output", exist_ok=True)
-    output_file = f"output/{filename}.md"
+    
     with open(output_file, 'w', encoding='utf-8') as f:
         f.write("\n\n".join(result_text))
 
@@ -123,9 +130,10 @@ def extract_text_from_pdf(pdf_path: str) -> str:
 def load_all_pdfs(folder_path: str) -> list[str]:
     pdf_paths = glob.glob(os.path.join(folder_path, "*.pdf"))
     processed_files = []
+
     for path in pdf_paths:
         start_time = time.time()
         processed_files.append(extract_text_from_pdf(path))
         finish_time = time.time()
-        print("소요 시간 : " + str(finish_time - start_time))
+        print(f"📄 {os.path.basename(path)} 처리 완료 (소요 시간: {finish_time - start_time:.2f}초)")
     return processed_files
