@@ -15,7 +15,6 @@ FAISS_STORE_PATH = os.path.join(BASE_DIR, "faiss_store")
 # the exact same embedding you used in build_index.py
 EMBED_MODEL = HuggingFaceEmbeddings(
     model_name="dragonkue/BGE-m3-ko",
-    model_kwargs={"device": "mps"}, 
     encode_kwargs={"normalize_embeddings": True}
 )
 

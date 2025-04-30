@@ -54,7 +54,7 @@ def build_and_save_index():
     # 3. 배치 임베딩
     start = time.time()
     model = SentenceTransformer(MODEL_NAME)
-    embeddings = model.encode(chunks, batch_size=64, show_progress_bar=True)
+    embeddings = model.encode(chunks, batch_size=BATCH_SIZE, show_progress_bar=True)
     print(f"⚡ 임베딩 완료: shape={embeddings.shape}, {time.time() - start:.2f}s")
 
     # 4. FAISS 저장
