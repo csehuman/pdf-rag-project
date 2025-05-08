@@ -22,5 +22,4 @@ def embed_texts(chunks, model_name="dragonkue/BGE-m3-ko"):
     model = SentenceTransformer(model_name)
     embeddings = model.encode(chunks, batch_size=BATCH_SIZE, show_progress_bar=True)
     
-    
     return embeddings

@@ -3,32 +3,29 @@ from llama_index.llms.ollama import Ollama as LI_Ollama
 from llama_index.core.node_parser import SentenceSplitter
 from llama_index.core.schema import Document
 from langchain_community.retrievers.llama_index import LlamaIndexRetriever
-from utils.embeddings import get_korean_embedding
-from utils.env_loader import load_env
 from langchain_community.vectorstores import FAISS
 from langchain_community.embeddings import HuggingFaceEmbeddings
+from utils.env_loader import load_env
+from utils.import_loader import load_config, dynamic_import
 
 import os
-import yaml
 
-with open("config.yaml", "r") as file:
-    config = yaml.safe_load(file)
 
-BASE_DIR = config['paths']['root']
-FAISS_STORE_PATH = os.path.join(BASE_DIR, config['paths']['faiss_store'])
+config = load_config()
 
-EMBED_MODEL = HuggingFaceEmbeddings(
-    model_name="dragonkue/BGE-m3-ko",
-    encode_kwargs={"normalize_embeddings": True}
-)
+# BASE_DIR = config['paths']['root']
+FAISS_STORE_PATH = os.path.abspath(config['paths']['faiss_store'])
+embedding_conf = config['modules']['embeddings']
+EMBED_MODEL_NAME = dynamic_import(embedding_conf['module'], embedding_conf['functions'])
+# embed_texts = embedding['embed_texts']
 
 def build_retriever(doc_texts: list[str], chunk_size=512, top_k=5):
     splitter = SentenceSplitter(chunk_size=chunk_size, chunk_overlap=50)
     docs = [Document(text=t) for t in doc_texts]
     nodes = splitter.get_nodes_from_documents(docs)
 
-    embed_model = get_korean_embedding()
-    index = VectorStoreIndex(nodes, embed_model=embed_model)
+    # embed_model = get_korean_embedding()
+    index = VectorStoreIndex(nodes, embed_model=EMBED_MODEL_NAME)
 
     # Use your Ollama LLM in Llama-Index:
     base_url, model_name = load_env()
@@ -43,7 +40,7 @@ def build_retriever(doc_texts: list[str], chunk_size=512, top_k=5):
 def load_retriever(k: int = 5):
     vs = FAISS.load_local(
         FAISS_STORE_PATH,
-        EMBED_MODEL,
+        EMBED_MODEL_NAME,
         allow_dangerous_deserialization=True
     )
     return vs.as_retriever(search_kwargs={"k": k})
