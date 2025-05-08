@@ -1,7 +1,7 @@
 import os
 from langchain.vectorstores import FAISS
 from langchain.embeddings.base import Embeddings
-from utils.config_loader import load_config
+from utils.import_loader import load_config
 
 config = load_config()
 FAISS_STORE_PATH = config['paths']['faiss_store']
@@ -26,4 +26,4 @@ def save_faiss_index(chunks, embeddings):
     embedding_model = PrecomputedEmbeddings(embeddings)
     vectorstore = FAISS.from_texts(texts=chunks, embedding=embedding_model)
     vectorstore.save_local(FAISS_STORE_PATH)
-    print(f"💾 FAISS 저장 완료: {FAISS_STORE_PATH}")
+

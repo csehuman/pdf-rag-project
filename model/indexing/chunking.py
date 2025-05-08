@@ -1,6 +1,6 @@
 from llama_index.core.node_parser import SentenceSplitter
 from llama_index.core.schema import Document
-from utils.config_loader import load_config
+from utils.import_loader import load_config
 
 config = load_config()
 CHUNK_SIZE = config['indexing']['chunk_size']
