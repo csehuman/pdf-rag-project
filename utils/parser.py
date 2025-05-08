@@ -74,7 +74,7 @@ def is_extraction_failed(text: str, min_length=30) -> bool:
     return len(text.strip()) < min_length or "표" in text[:20]
 
 def extract_text_from_pdf(pdf_path: str) -> str:
-    output_dir = "output"
+    output_dir = "data/processed"
     os.makedirs(output_dir, exist_ok=True)
     filename = os.path.splitext(os.path.basename(pdf_path))[0]
     output_file = os.path.join(output_dir, f"{filename}.md")

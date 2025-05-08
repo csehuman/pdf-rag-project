@@ -13,6 +13,16 @@ from langchain.embeddings.base import Embeddings
 from transformers import AutoTokenizer, AutoModel
 from sentence_transformers import SentenceTransformer
 
+from utils.import_loader import load_config, dynamic_import
+
+# 설정 로드
+config = load_config()
+pdf_path = config['paths']['pdf_documents']
+
+# PDF 로딩
+pdfs = load_all_pdfs(pdf_path)
+
+
 # ─── 설정 ───
 PDF_FOLDER       = os.path.join(os.path.dirname(__file__), "pdf_data")
 FAISS_STORE_PATH = os.path.join(os.path.dirname(__file__), "faiss_store")

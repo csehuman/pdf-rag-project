@@ -3,7 +3,7 @@ from llama_index.llms.ollama import Ollama as LI_Ollama
 from llama_index.core.node_parser import SentenceSplitter
 from llama_index.core.schema import Document
 from langchain_community.retrievers.llama_index import LlamaIndexRetriever
-from .embeddings import get_korean_embedding
+from utils.embeddings import get_korean_embedding
 from utils.env_loader import load_env
 from langchain_community.vectorstores import FAISS
 from langchain_community.embeddings import HuggingFaceEmbeddings

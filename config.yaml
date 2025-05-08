@@ -2,3 +2,21 @@ paths:
   root: "./"
   documents: "./data/documents"
   faiss_store: "./data/faiss_store"
+
+imports:
+  parser:
+    module: utils.parser
+    functions:
+      - load_all_pdfs
+      - parse_document
+
+  embedding:
+    module: utils.embeddings
+    functions:
+      - get_korean_embedding
+      - embed_text
+
+  chunking:
+    module: utils.chunking
+    functions:
+      - chunk_text
