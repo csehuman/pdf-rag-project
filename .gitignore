@@ -10,6 +10,8 @@ faiss_store/
 
 # 가성 환경
 clean-env/
+rag-env/
+venv/
 
 # Python 캐시
 __pycache__/

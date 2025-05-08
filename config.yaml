@@ -1,0 +1,4 @@
+paths:
+  root: "./"
+  documents: "./data/documents"
+  faiss_store: "./data/faiss_store"

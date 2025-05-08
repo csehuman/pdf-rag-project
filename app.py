@@ -1,8 +1,8 @@
 import streamlit as st
 import time
 from typing import List, Dict
-from main import load_retriever
-from chains import (
+from model.retriever import load_retriever
+from model.chains import (
     create_classifier_chain, 
     create_medical_chain, 
     create_general_chain, 
