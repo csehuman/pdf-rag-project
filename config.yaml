@@ -1,22 +1,27 @@
 paths:
-  root: "./"
-  documents: "./data/documents"
-  faiss_store: "./data/faiss_store"
+  pdf_documents: ./data/documents
+  faiss_store: ./faiss_store
 
-imports:
+indexing:
+  chunk_size: 384
+  overlap: 30
+  model_name: sentence-transformers/all-MiniLM-L6-v2
+  batch_size: 64
+
+modules:
   parser:
-    module: utils.parser
+    module: model.indexing.parser
     functions:
       - load_all_pdfs
-      - parse_document
-
-  embedding:
-    module: utils.embeddings
-    functions:
-      - get_korean_embedding
-      - embed_text
-
   chunking:
-    module: utils.chunking
+    module: model.indexing.chunking
     functions:
-      - chunk_text
+      - chunk_documents
+  embeddings:
+    module: model.indexing.embeddings
+    functions:
+      - embed_texts
+  vector_store:
+    module: model.indexing.vector_store
+    functions:
+      - save_faiss_index
