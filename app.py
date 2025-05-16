@@ -2,6 +2,9 @@ import streamlit as st
 import time
 from typing import List, Dict
 from utils.import_loader import load_modules_from_config
+import asyncio
+import re
+import inspect
 
 
 modules = load_modules_from_config()
@@ -79,14 +82,22 @@ if prompt := st.chat_input("What would you like to know?"):
             message_placeholder.markdown("🤔 질문을 분석하고 있습니다...")
             
             classification = get_chain_response(classifier_chain, prompt, chat_history)
-            category = classification.split("\n")[0].replace("CATEGORY:", "").strip()
+            category = re.search(r"CATEGORY:\s*(\d+)", classification["text"]).group(1)
+            print('classification', classification)
+            print(category)
             
             # Step 2: Process based on classification
             if category == "1":  # Medical question
                 message_placeholder.markdown("🔍 의료 진료지침 문서를 검색 중입니다...")
                 with st.spinner("관련 의료 정보를 찾고 있습니다..."):
-                    documents = retriever.get_relevant_documents(prompt)
+                    print('documents11')
+                    print(type(retriever))
+                    print(inspect.getsource(retriever.invoke))
+                    documents = retriever.invoke(input="폐암의 방사선 치료원칙은 무엇인가요?")
+                    print('documents')
+                    
                     response = get_chain_response(medical_chain, prompt, chat_history, documents)
+                    print('response')
             else:  # General or conversation-related question
                 message_placeholder.markdown("💭 답변을 생성하고 있습니다...")
                 response = get_chain_response(general_chain, prompt, chat_history)
@@ -96,7 +107,25 @@ if prompt := st.chat_input("What would you like to know?"):
             
             # Simulate streaming with progress bar
             #progress_bar = st.progress(0)
-            words = response.split()
+            
+            print("[DEBUG] Response:", response)
+            words=''
+            if isinstance(response, str):
+                # 🔍 문자열 처리
+                print("[DEBUG] Result Type: str")
+                words = response.split()
+            elif isinstance(response, dict):
+                # 🔍 딕셔너리 처리
+                print("[DEBUG] Result Type: dict, Keys:", list(response.keys()))
+
+                # "answer" 키가 있다면 우선 반환
+                if "text" in response:
+                    words = response["text"].split()
+                else:
+                    # 없을 경우 첫 번째 키를 선택
+                    first_key = next(iter(response))
+                    words = response[first_key].split()
+
             for i, chunk in enumerate(words):
                 full_response += chunk + " "
                 progress = (i + 1) / len(words)

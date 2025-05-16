@@ -5,6 +5,7 @@ from langchain.chains import StuffDocumentsChain
 from typing import Optional
 from utils.env_loader import load_env
 
+
 def create_ollama_llm():
     """Create Ollama LLM instance using environment settings."""
     base_url, model_name = load_env()
@@ -49,7 +50,29 @@ def create_general_chain(llm) -> LLMChain:
 
 def get_chain_response(chain, query: str, chat_history: str, documents: Optional[list] = None) -> str:
     """Get response from appropriate chain with proper inputs."""
+    print('get_chain_response')
     if isinstance(chain, StuffDocumentsChain) and documents:
-        return chain.run(input_documents=documents, question=query, chat_history=chat_history)
+        print('if')
+        return chain.invoke(input={
+            "question": query,
+            "input_documents": documents,
+            "chat_history": chat_history
+        })
     else:
-        return chain.run(question=query, chat_history=chat_history) 
+        print('else')
+        return chain.invoke(input={
+            "question": query,
+            "chat_history": chat_history
+        }) 
+
+
+if __name__ == "__main__":
+    llm = create_ollama_llm()
+    template = load_prompt_template("classifier_prompt")
+    from utils.import_loader import load_modules_from_config
+    modules = load_modules_from_config()
+    load_retriever = modules['retriever']['load_retriever']
+    retriever = load_retriever(k=5)
+    classifier_chain = create_classifier_chain(llm)
+    medical_chain = create_medical_chain(llm, retriever)
+    general_chain = create_general_chain(llm)
