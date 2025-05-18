@@ -85,19 +85,15 @@ if prompt := st.chat_input("What would you like to know?"):
             category = re.search(r"CATEGORY:\s*(\d+)", classification["text"]).group(1)
             print('classification', classification)
             print(category)
+            print(type(retriever))
             
             # Step 2: Process based on classification
             if category == "1":  # Medical question
                 message_placeholder.markdown("🔍 의료 진료지침 문서를 검색 중입니다...")
                 with st.spinner("관련 의료 정보를 찾고 있습니다..."):
-                    print('documents11')
-                    print(type(retriever))
-                    print(inspect.getsource(retriever.invoke))
-                    documents = retriever.invoke(input="폐암의 방사선 치료원칙은 무엇인가요?")
+                    documents = retriever.invoke("query")
                     print('documents')
-                    
                     response = get_chain_response(medical_chain, prompt, chat_history, documents)
-                    print('response')
             else:  # General or conversation-related question
                 message_placeholder.markdown("💭 답변을 생성하고 있습니다...")
                 response = get_chain_response(general_chain, prompt, chat_history)
