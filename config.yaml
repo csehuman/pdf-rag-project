@@ -2,7 +2,7 @@ paths:
   # paths for the data
   root: .
   pdf_documents: ./data/documents
-  faiss_store: ./faiss_store
+  faiss_store: ./data/faiss_store
 
 indexing:
   chunk_size: 384

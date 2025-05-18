@@ -1,10 +1,12 @@
 import os
 from langchain.vectorstores import FAISS
 from langchain.embeddings.base import Embeddings
-from utils.import_loader import load_config
+from pathlib import Path
 
-config = load_config()
-FAISS_STORE_PATH = config['paths']['faiss_store']
+
+HERE = Path(__file__).resolve().parent
+PROJECT_ROOT = HERE.parent.parent
+FAISS_STORE_PATH = PROJECT_ROOT / "data" / "faiss_store"
 
 class PrecomputedEmbeddings(Embeddings):
     def __init__(self, embeddings):
