@@ -1,0 +1,43 @@
+paths:
+  # paths for the data
+  root: .
+  pdf_documents: ./data/documents
+  faiss_store: ./data/faiss_store
+
+indexing:
+  chunk_size: 384
+  overlap: 30
+  model_name: sentence-transformers/all-MiniLM-L6-v2
+  batch_size: 64
+
+modules:
+  # indexing
+  parser:
+    module: model.indexing.parser
+    functions:
+      - load_all_pdfs
+  chunking:
+    module: model.indexing.chunking
+    functions:
+      - chunk_documents
+  embeddings:
+    module: model.indexing.embeddings
+    functions:
+      - embed_texts
+  vector_store:
+    module: model.indexing.vector_store
+    functions:
+      - save_faiss_index
+  # retriever
+  retriever:
+    module: model.retriving.retriever
+    functions:
+      - load_retriever
+  chains:
+    module: model.chains
+    functions:
+      - create_classifier_chain
+      - create_medical_chain
+      - create_general_chain
+      - get_chain_response
+      - create_ollama_llm
