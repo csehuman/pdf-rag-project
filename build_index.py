@@ -32,14 +32,14 @@ def build_and_save_index():
     start = time.time()
     
     # PDF 로딩
-    docs_texts = load_all_pdfs(config['paths']['pdf_documents'])
+    docs_texts = load_all_pdfs(DATA_DOCUMENTS_PATH)
 
     # 청킹
     chunks = chunk_documents(docs_texts)
     print(f"📏 청크 수: {len(chunks)}")
     
     # 임베딩 생성
-    embeddings = embed_texts(chunks, config['indexing']['model_name'])
+    embeddings = embed_texts(chunks, "dragonkue/BGE-m3-ko")
     print("⚡ 임베딩 완료")
     
     # FAISS 인덱스 저장
