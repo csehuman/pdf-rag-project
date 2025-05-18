@@ -11,15 +11,24 @@ from llama_index.embeddings.huggingface import HuggingFaceEmbedding
 
 
 import os
+from pathlib import Path
+
+
+HERE = Path(__file__).resolve().parent
+PROJECT_ROOT = HERE.parent.parent
+FAISS_STORE_PATH = PROJECT_ROOT / "data" / "faiss_store"
 
 
 config = load_config()
 
 # BASE_DIR = config['paths']['root']
-FAISS_STORE_PATH = os.path.abspath(config['paths']['faiss_store'])
 embedding_conf = config['modules']['embeddings']
-EMBED_MODEL_INSTANCE = HuggingFaceEmbedding(model_name="dragonkue/BGE-m3-ko")
-Settings.embed_model = EMBED_MODEL_INSTANCE
+# EMBED_MODEL_INSTANCE = HuggingFaceEmbedding(model_name="dragonkue/BGE-m3-ko")
+EMBED_MODEL_INSTANCE  = HuggingFaceEmbeddings(
+    model_name="dragonkue/BGE-m3-ko",
+    encode_kwargs={"normalize_embeddings": True}
+)
+
 # embed_texts = embedding['embed_texts']
 
 def build_retriever(doc_texts: list[str], chunk_size=512, top_k=5):
@@ -32,7 +41,6 @@ def build_retriever(doc_texts: list[str], chunk_size=512, top_k=5):
 
     # Use your Ollama LLM in Llama-Index:
     base_url, model_name = load_env()
-    Settings.llm = LI_Ollama(model=model_name, base_url=base_url)
 
     # build a query engine (now using your phi4 model)
     query_engine = index.as_query_engine(similarity_top_k=top_k)

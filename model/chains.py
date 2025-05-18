@@ -48,23 +48,29 @@ def create_general_chain(llm) -> LLMChain:
     )
     return LLMChain(llm=llm, prompt=prompt)
 
+# def get_chain_response(chain, query: str, chat_history: str, documents: Optional[list] = None) -> str:
+#     """Get response from appropriate chain with proper inputs."""
+#     print('get_chain_response')
+#     if isinstance(chain, StuffDocumentsChain) and documents:
+#         print('if')
+#         return chain.invoke(input={
+#             "question": query,
+#             "input_documents": documents,
+#             "chat_history": chat_history
+#         })
+#     else:
+#         print('else')
+#         return chain.invoke(input={
+#             "question": query,
+#             "chat_history": chat_history
+#         }) 
+
 def get_chain_response(chain, query: str, chat_history: str, documents: Optional[list] = None) -> str:
     """Get response from appropriate chain with proper inputs."""
-    print('get_chain_response')
     if isinstance(chain, StuffDocumentsChain) and documents:
-        print('if')
-        return chain.invoke(input={
-            "question": query,
-            "input_documents": documents,
-            "chat_history": chat_history
-        })
+        return chain.run(input_documents=documents, question=query, chat_history=chat_history)
     else:
-        print('else')
-        return chain.invoke(input={
-            "question": query,
-            "chat_history": chat_history
-        }) 
-
+        return chain.run(question=query, chat_history=chat_history) 
 
 if __name__ == "__main__":
     llm = create_ollama_llm()

@@ -1,14 +1,15 @@
 import streamlit as st
 import time
 from typing import List, Dict
-from main import load_retriever
-from chains import (
-    create_classifier_chain, 
-    create_medical_chain, 
-    create_general_chain, 
-    get_chain_response,
-    create_ollama_llm
-)
+from utils.import_loader import load_modules_from_config
+modules = load_modules_from_config()
+
+load_retriever = modules['retriever']['load_retriever']
+create_classifier_chain = modules['chains']['create_classifier_chain']
+create_medical_chain = modules['chains']['create_medical_chain']
+create_general_chain = modules['chains']['create_general_chain']
+get_chain_response = modules['chains']['get_chain_response']
+create_ollama_llm = modules['chains']['create_ollama_llm']
 
 # Set page config
 st.set_page_config(
