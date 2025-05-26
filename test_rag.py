@@ -58,16 +58,9 @@ for item in dataset:
         response=answer
     )
     predictions.append(sample)
-    # predictions.append({
-    #     "question": item["question"],
-    #     "answer": answer,
-    #     "ground_truth": item["reference_answer"],
-    #     "context": [doc.page_content for doc in docs]
-    # })
 
 evaluator_llm = LangchainLLMWrapper(llm)
 dataset = EvaluationDataset(predictions)
-# help(EvaluationDataset)
 
 results = evaluate(
     dataset=dataset,
