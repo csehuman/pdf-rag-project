@@ -1,0 +1,170 @@
+[
+  {
+    "question": "진균성 복막염 초기 치료에 어떤 약제를 사용하는 것이 권장되나요?",
+    "reference_answer": "진균성 복막염 초기 치료는 배양 및 감수성 검사 결과가 나오기 전까지 amphotericin B와 flucytosine의 병용 치료가 권장됩니다."
+  },
+  {
+    "question": "진균성 복막염에서 배양 검사 결과에 따라 약제를 어떻게 변경해야 하나요?",
+    "reference_answer": "검출된 균종 및 MIC 값에 따라 amphotericin B는 echinocandin (caspofungin, anidulafungin 등), fluconazole, posaconazole, 또는 voriconazole로 교체할 수 있습니다."
+  },
+  {
+    "question": "진균성 복막염 환자에서 도관 관리는 어떻게 해야 하나요?",
+    "reference_answer": "진균성 복막염이 배양되는 즉시 복막투석 도관을 제거하는 것이 필수적입니다."
+  },
+  {
+    "question": "Amphotericin B의 투여 방식에 따른 부작용과 유용성은 어떤 차이가 있나요?",
+    "reference_answer": "Amphotericin B를 복강 내 투여할 경우 화학적 복막염과 통증이 발생할 수 있고, 정맥 주사는 복강 내 생체이용률이 낮습니다."
+  },
+  {
+    "question": "Flucytosine 투여 시 주의해야 할 점은 무엇인가요?",
+    "reference_answer": "Flucytosine은 골수독성을 방지하기 위해 혈장 약물 농도를 주기적으로 모니터링해야 하며, 혈중 농도는 일반적으로 25-50 μg/mL 범위에 있어야 하고 최대 100 μg/mL를 넘지 않아야 합니다."
+  },
+  {
+    "question": "Mycobacteria 복막염 치료의 초기 4자 요법은 무엇인가요?",
+    "reference_answer": "Mycobacteria 복막염의 초기 치료는 rifampicin, isoniazid, pyrazinamide, 그리고 levofloxacin 또는 moxifloxacin을 포함한 4자 요법으로 시작합니다."
+  },
+  {
+    "question": "Pyrazinamide와 fluoroquinolone 계열 약물은 치료 기간 중 언제 중단하나요?",
+    "reference_answer": "Pyrazinamide와 levofloxacin 또는 moxifloxacin은 치료 시작 후 3개월째 중단하며, rifampicin과 isoniazid는 12-18개월 동안 지속 투여합니다."
+  },
+  {
+    "question": "Mycobacteria 복막염 진단을 위한 검사 방법에는 어떤 것이 있나요?",
+    "reference_answer": "복막 투석액의 세포수 검사, Ziehl-Neelsen 염색 도말, DNA PCR 검사, 대용량 원심분리 후 고체 및 액체 배지 혼합 배양, 그리고 필요시 복막이나 장막 생검 및 복강경 검사가 포함됩니다."
+  },
+  {
+    "question": "복막투석 도관은 언제 제거해야 하나요?",
+    "reference_answer": "도관 제거는 논란이 있지만, 결핵성 복막염 환자의 경우 복막투석 도관을 제거하고 6주간 항결핵 치료 후 재삽입을 고려하는 것이 다수 의견이나, 도관 제거 없이 성공적으로 치료된 사례도 보고되고 있습니다."
+  },
+  {
+    "question": "Isoniazid 사용 시 주의할 점은 무엇인가요?",
+    "reference_answer": "Isoniazid에 의한 신경 독성을 예방하기 위해 하루 50~100 mg의 pyridoxine(비타민 B6)을 병용 투여해야 합니다."
+  },
+  {
+    "question": "난치성 복막염이란 무엇이며, 언제 도관 제거가 필요한가요?",
+    "reference_answer": "난치성 복막염은 적절한 항생제 치료 5일 후에도 복막액의 혼탁도가 개선되지 않는 경우를 말하며, 이때 도관을 제거하여 복막을 보호하고 향후 복막 사용을 대비해야 합니다."
+  },
+  {
+    "question": "난치성 복막염 치료 실패를 예측하는 지표는 무엇인가요?",
+    "reference_answer": "치료 3일째 복막 투석액의 백혈구 수가 1090/mm³ 이상일 경우 난치성 복막염 치료 실패의 독립 예측 인자로 보고되고 있습니다."
+  },
+  {
+    "question": "항생제를 도관내에 주입하는 항생제 락 치료(antibiotics lock therapy)는 어떤 경우에 사용되나요?",
+    "reference_answer": "항생제를 복막 도관내에 주입하여 달아두는 방법은 도관 제거 없이 난치성 복막염을 치료하는 유효한 방법이 될 수 있다는 국내 증례 보고가 있습니다."
+  },
+  {
+    "question": "복막염 치료 시 복막 투석 도관의 역할과 목표는 무엇인가요?",
+    "reference_answer": "복막염 관리의 일차 목표는 환자의 최적 치료와 복막 보호이며, 도관 유지가 우선 목적이 아니라는 점에서 난치성 복막염에서는 도관 제거가 필요할 수 있습니다."
+  },
+  {
+    "question": "잔여 신기능이 남아 있는 환자에서 복막염 치료 시 항생제 용량 조절이 필요한 이유는 무엇인가요?",
+    "reference_answer": "잔여 신기능이 있는 환자(잔여 사구체 여과율 ≥ 5 mL/min/1.73 m²)에서는 신장으로 배출되는 항생제 용량을 조절해야 하며, 특히 아미노글리코사이드계 항생제는 장기간 사용을 피하는 것이 좋습니다."
+  },
+  {
+    "question": "배양 음성 복막염이란 무엇인가요?",
+    "reference_answer": "배양 음성 복막염은 복통과 함께 백혈구 수가 100개/μL 이상이고, 중성구가 50% 이상 포함된 혼탁한 복막액이 있으나 72시간 동안 배양에서 균이 성장하지 않는 상태를 말합니다."
+  },
+  {
+    "question": "배양 음성 복막염의 치료 원칙은 어떻게 되나요?",
+    "reference_answer": "초기에는 임상적 경과에 따라 치료하며, 3일째 임상 평가와 백혈구 감별 계산 검사를 다시 실시합니다. 임상 호전이 있으면 14일간 초기 치료를 계속하고, 감염이 지속되면 비전형적 원인균에 대해 특수 배양 기법을 사용하고 진균 감염 여부도 고려합니다."
+  },
+  {
+    "question": "배양 음성 복막염에서 도관 제거는 언제 고려해야 하나요?",
+    "reference_answer": "초기 치료 5일 후에도 임상적 호전이 없으면 도관 제거를 강력히 고려하며, 도관 제거 후 최소 14일간 항생제 치료를 유지합니다."
+  },
+  {
+    "question": "배양 음성 복막염에서 비전형적 원인균은 어떤 것들이 있나요?",
+    "reference_answer": "비전형적 원인균으로는 lipid-dependent yeast, mycobacteria, Legionella, slow-growing bacteria, Campylobacter, fungi, Ureaplasma, Mycoplasma, enteroviruses 등이 있습니다."
+  },
+  {
+    "question": "배양 음성 복막염 환자가 항생제를 복용한 이력이 있다면 치료에 어떤 영향이 있나요?",
+    "reference_answer": "항생제 사용은 배양 결과가 음성으로 나오는 주요 원인 중 하나이므로, 환자의 항생제 복용 이력을 반드시 확인해야 하며, 이로 인해 균이 배양되지 않을 수 있어 특수 배양 기법이 필요할 수 있습니다."
+  },
+  {
+    "question": "자동복막투석 환자에서 복막염 치료 시 항생제 투여 방법은 어떻게 하나요?",
+    "reference_answer": "자동복막투석 환자의 복막염 치료는 복강내 항생제 투여 시 지속적 투여와 간헐적 투여 모두 가능하며, 환자가 직접 복강내 투여할 수 있도록 적절한 훈련이 필요합니다."
+  },
+  {
+    "question": "자동복막투석 환자에서 복막염 발생 시 CAPD로 전환하는 것이 권유되나요?",
+    "reference_answer": "일시적으로 지속성 외래 복막투석(CAPD)으로 전환을 고려할 수 있으나, 일반적으로 권유하지 않습니다. CAPD 투석액 준비의 어려움과 환자의 상황을 고려한 결정이 필요합니다."
+  },
+  {
+    "question": "자동복막투석 환자에서 간헐적 복강내 항생제 투여 시 주의할 점은 무엇인가요?",
+    "reference_answer": "간헐적 투여 시 항생제 함유 투석 용액을 최소 6시간 이상 저류시켜 약물이 충분히 전신으로 흡수되도록 해야 합니다."
+  },
+  {
+    "question": "자동복막투석 환자에서 복강내 항생제 투여 용량은 어떻게 되나요?",
+    "reference_answer": "예를 들어, Cefazolin은 복강내 20 mg/kg 매일 투여(최소 6시간 이상 저류), Vancomycin은 부하 용량 30 mg/kg 후 매 3–5일마다 15 mg/kg 투여, Fluconazole은 200 mg을 24–48시간마다 투여하는 등 약물별 권장 용량이 다릅니다."
+  },
+  {
+    "question": "자동복막투석 환자에서 복강내 Piperacillin 투여는 어떻게 해야 하나요?",
+    "reference_answer": "복강내 Piperacillin 투여는 권유되지 않습니다."
+  },
+  {
+    "question": "출구 감염은 어떻게 진단하나요?",
+    "reference_answer": "도관 출구에서 화농성 배농이 있으면 발적 여부와 상관없이 출구 감염으로 진단합니다. 출구에 화농성 분비물, 발적, 도관 주위 부종, 압통이 동반될 수 있습니다."
+  },
+  {
+    "question": "터널 감염은 어떤 증상으로 의심하나요?",
+    "reference_answer": "터널 감염은 피하 도관 경로를 따라 발적, 종창, 압통이 있을 때 고려하며, 임상증상이 없을 경우 초음파로도 발견될 수 있습니다."
+  },
+  {
+    "question": "출구 감염과 터널 감염의 주요 원인균은 무엇인가요?",
+    "reference_answer": "주요 원인균은 Staphylococcus aureus와 Pseudomonas aeruginosa이며, 이 균들은 복막염을 유발할 수 있어 적극적인 치료가 필요합니다."
+  },
+  {
+    "question": "출구 감염과 터널 감염 치료 시 어떤 항생제를 사용하나요?",
+    "reference_answer": "그람양성균은 penicillinase 저항성 penicillin이나 1세대 cephalosporin(예: cephalexin)으로 치료하며, MRSA를 제외한 경우에는 vancomycin 사용을 피합니다. Pseudomonas 감염 시에는 fluoroquinolone을 1차 선택으로 하며, 필요 시 복강내 aminoglycoside, ceftazidime 등 2차 항녹농균 항생제를 병합합니다."
+  },
+  {
+    "question": "출구 감염 및 터널 감염에서 도관 제거는 언제 고려하나요?",
+    "reference_answer": "치료 3주 이상 적절한 항생제 사용에도 호전되지 않거나, Pseudomonas에 의한 치료 저항성 출구 감염, 터널 감염이 있을 경우 조기에 도관 제거를 고려하며, 출구 감염이 복막염으로 진행하거나 복합 감염 시에도 도관 제거가 필요합니다."
+  },
+  {
+    "question": "복막염 환자의 도관 제거 적응증은 무엇인가요?",
+    "reference_answer": "회귀성(relapsing), 난치성 복막염, 진균성 복막염, 난치성 도관 감염인 경우 도관 제거를 권장합니다. 또한, 적절한 항생제 치료 5일 후에도 호전이 없는 배양음성 복막염도 도관 제거 대상입니다."
+  },
+  {
+    "question": "진균성 복막염 환자의 도관 관리는 어떻게 하나요?",
+    "reference_answer": "진균성 복막염은 즉시 도관을 제거해야 하며, 신속한 도관 제거가 치료 성공과 복막 보호에 중요합니다."
+  },
+  {
+    "question": "S. aureus와 Pseudomonas에 의한 복막염과 도관 감염이 동반된 경우 어떻게 하나요?",
+    "reference_answer": "S. aureus와 Pseudomonas에 의한 복막염과 출구 또는 터널 감염이 동반된 경우 도관 제거를 고려해야 합니다."
+  },
+  {
+    "question": "결핵성 복막염에서 도관 제거는 어떻게 결정하나요?",
+    "reference_answer": "결핵성 복막염은 일반적으로 도관을 제거하지만, 조기 진단과 적절한 치료 시에는 도관을 유지할 수도 있습니다."
+  },
+  {
+    "question": "도관 제거 시기 결정에 도움이 되는 검사나 지표가 있나요?",
+    "reference_answer": "치료 3일째 복막 투석액 백혈구수가 1090/mm³ 이상일 경우 치료 실패의 독립 예측인자이며, 이를 참고하여 도관 제거 시기를 고려할 수 있습니다."
+  },
+  {
+    "question": "복막염 예방을 위한 정기 평가의 중요성은 무엇인가요?",
+    "reference_answer": "복막투석 기관에서는 적어도 1년마다 원인균, 치료 방법, 결과를 포함한 복막염과 출구 감염에 대해 정기적으로 평가해야 하며, 지역 특성에 맞는 치료 및 예방 지침을 마련해야 합니다."
+  },
+  {
+    "question": "도관 삽입 시 감염 위험을 줄이기 위한 방법은 무엇인가요?",
+    "reference_answer": "도관 삽입 전 이상적인 출구 위치를 결정하고, 변비가 없도록 하며, 항생제(1세대 cephalosporin 혹은 vancomycin) 정맥주사 1회 투여로 감염 위험을 줄입니다."
+  },
+  {
+    "question": "복막투석 시 연결 방법에서 감염 위험을 낮추려면 어떻게 해야 하나요?",
+    "reference_answer": "지속성 외래복막투석(CAPD) 환자는 이중 투석백(two bag) 시스템을 사용하여야 하며, 손으로 찔러 넣는(spiking) 결합 방법은 피하거나 보조기구를 사용해야 합니다."
+  },
+  {
+    "question": "환자 교육이 복막염 예방에 어떻게 도움이 되나요?",
+    "reference_answer": "무균적 처치와 적절한 손씻기, 오염 방지법을 포함한 강화된 교육은 출구 감염과 복막염 발생을 유의하게 감소시킵니다."
+  },
+  {
+    "question": "침습적 시술 시 복막염 예방을 위한 권고 사항은 무엇인가요?",
+    "reference_answer": "침습적 시술 전 예방적 항생제를 투여해야 하며, 복강과 골반 부위 시술 시에는 복막액을 비워야 합니다."
+  },
+  {
+    "question": "진균성 복막염 발생 위험이 높은 경우 예방 방법은 무엇인가요?",
+    "reference_answer": "항생제를 장기간 혹은 반복 투여받는 환자에게는 진균성 복막염 예방을 위해 경구 nystatin이나 fluconazole 투여를 고려할 수 있으나, 연구 결과는 일관되지 않습니다."
+  },
+  {
+    "question": "장관에서 기원하는 감염을 예방하려면 어떻게 해야 하나요?",
+    "reference_answer": "규칙적인 배변과 변비 예방을 교육하며, 설사 후 손 씻기를 철저히 해 오염을 막아야 하며, 활동성 염증성 장질환 환자는 복막투석이 금기입니다."
+  }
+]

@@ -434,3 +434,4 @@ ydata-profiling==4.6.0
 ypy-websocket==0.8.4
 zipp==3.21.0
 zstandard==0.23.0
+ragas[eval]

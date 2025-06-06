@@ -7,7 +7,6 @@ from langchain_community.vectorstores import FAISS
 from langchain_community.embeddings import HuggingFaceEmbeddings
 from utils.env_loader import load_env
 from utils.import_loader import load_config, dynamic_import
-from llama_index.embeddings.huggingface import HuggingFaceEmbedding
 
 
 import os
