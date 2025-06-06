@@ -1,0 +1,49 @@
+paths:
+  root: .
+  bm25_pickle: ./pinecone_test/processed/bm25_and_docs.pkl
+  pinecone_index: kor-medical-test
+  prompts_dir: ./data/prompts
+  env_file: .env
+
+indexing:
+  chunk_size: 300
+  chunk_overlap: 50
+  embedding_model: dragonkue/bge-m3-ko
+  bm25_tokenizer: kiwi
+
+pinecone:
+  api_key_env: "PINECONE"
+  pool_threads: 10
+
+llm:
+  ollama_base_url_env: "http://34.170.17.36:8888"
+  ollama_model_name_env: "phi4:latest"
+  system_prompt_file: system_prompt.txt
+  temperature: 0.3
+  top_k: 10
+  top_p: 0.5
+  repeat_penalty: 1.2
+  num_ctx: 4096
+
+retriever:
+  bm25_top_k: 20
+  dense_top_k: 10
+  hybrid_weights: [0.4, 0.6]
+
+reranker:
+  model_name: Dongjin-kr/ko-reranker
+  top_n: 7
+  original_score_weight: 0.4
+
+chains:
+  classifier_chain:
+    prompt_file: classifier_prompt.txt
+  general_chain:
+    prompt_file: general_prompt.txt
+  medical_chain:
+    prompt_file: medical_prompt.txt
+
+# 실험용 기본 질문
+demo:
+  question: 비소세포폐암 3기 치료 권고사항은 무엇인가요?
+  chat_history: ""
