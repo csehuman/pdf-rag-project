@@ -59,7 +59,7 @@ def load_retriever(k: int = 5):
 
 
 def load_retrieval_2():
-    api_key = "pcsk_7KjBdR_M9Mq2RACW27i4JrRcRufDw5SpWadyhgN92YLzJ6gb32R6eJwLF5nwPkdKqovepe"
+    api_key = os.getenv("PINECONE_API_KEY")
     INDEX_NAME = "ko-no-md-bge-m3-ko"
     MODEL_NAME = "dragonkue/bge-m3-ko"
 
