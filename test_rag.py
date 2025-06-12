@@ -57,7 +57,8 @@ embedding = dynamic_import(embedding_conf['module'], embedding_conf['functions']
 
 load_all_pdfs = parser['load_all_pdfs']
 load_retriever = modules['retriever']['load_retriever']
-load_retriever_2 = modules['retriever']['load_retrieval_2']
+dense_retriever = modules['retriever']['dense_retriever']
+hybrid_retriever = modules['retriever']['hybrid_retriever']
 create_medical_chain = modules['chains']['create_medical_chain']
 get_chain_response = modules['chains']['get_chain_response']
 create_ollama_llm = modules['chains']['create_ollama_llm']
@@ -68,7 +69,10 @@ load_env()
 
 # documents = load_all_pdfs("pdf_data")
 documents = load_parsed_markdown("data/processed")
-retriever = load_retriever()
+
+retriever = dense_retriever(index_name=config['pinecone']['index_name'], model_name=config['pinecone']['model_name'])
+# retriever = hybrid_retriever(index_name=config['pinecone']['index_name'], model_name=config['pinecone']['model_name'])
+
 llm = create_ollama_llm()
 qa_chain = create_medical_chain(retriever=retriever, llm=llm)
 
@@ -80,7 +84,7 @@ predictions = []
 for item in dataset:
     question = item["question"]
     prompt = question
-    chat_history = [] 
+    chat_history = []
     docs = retriever.get_relevant_documents(question)
     answer = get_chain_response(qa_chain, prompt, chat_history, docs)
     print(docs)
@@ -97,4 +101,3 @@ for item in dataset:
 dataset = EvaluationDataset(samples=predictions)
 score = evaluate(dataset, metrics = [faithfulness, context_recall, answer_correctness])
 print(score)
-
