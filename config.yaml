@@ -3,12 +3,17 @@ paths:
   root: .
   pdf_documents: ./data/documents
   faiss_store: ./data/faiss_store
+  pinecone_store: ./data/pinecone_store
 
 indexing:
   chunk_size: 384
   overlap: 30
   model_name: sentence-transformers/all-MiniLM-L6-v2
   batch_size: 64
+
+pinecone:
+  index_name: ko-md-strict-multilingual-e5-large-instruct
+  model_name: intfloat/multilingual-e5-large-instruct
 
 modules:
   # indexing
@@ -33,7 +38,8 @@ modules:
     module: model.retriving.retriever
     functions:
       - load_retriever
-      - load_retrieval_2
+      - dense_retriever
+      - hybrid_retriever
   chains:
     module: model.chains
     functions:

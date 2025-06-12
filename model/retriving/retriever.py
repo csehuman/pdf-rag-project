@@ -12,13 +12,15 @@ from langchain_pinecone import PineconeVectorStore
 
 
 import os
+import pickle
+from model.retriving.kiwi import *
 from pathlib import Path
 
 
 HERE = Path(__file__).resolve().parent
 PROJECT_ROOT = HERE.parent.parent
 FAISS_STORE_PATH = PROJECT_ROOT / "data" / "faiss_store"
-
+PINECONE_STORE_PATH = PROJECT_ROOT / "data" / "pinecone_store"
 
 config = load_config()
 
@@ -58,18 +60,38 @@ def load_retriever(k: int = 5):
     return vs.as_retriever(search_kwargs={"k": k})
 
 
-def load_retrieval_2():
+def dense_retriever(index_name, model_name):
     api_key = os.getenv("PINECONE_API_KEY")
-    INDEX_NAME = "ko-md-loosen-bge-m3-ko"
-    MODEL_NAME = "dragonkue/bge-m3-ko"
 
     # 1. Dense Retriever
     pc = Pinecone(api_key=api_key, pool_threads=10)
-    index = pc.Index(INDEX_NAME)
-    embedding = HuggingFaceEmbeddings(model_name=MODEL_NAME)
+    index = pc.Index(index_name)
+    embedding = HuggingFaceEmbeddings(model_name=model_name)
     vectorstore = PineconeVectorStore(index=index, embedding=embedding, text_key="context")
-    dense_retriever = vectorstore.as_retriever(search_kwargs={"k": 10})
-    return dense_retriever 
+    return vectorstore.as_retriever(search_kwargs={"k": 10})
+
+def hybrid_retriever(index_name, model_name):
+    api_key = os.getenv("PINECONE_API_KEY")
+
+    pc = Pinecone(api_key=api_key, pool_threads=10)
+    index = pc.Index(index_name)
+    embedding = HuggingFaceEmbeddings(model_name=model_name)
+
+    SPARSE_PATH = PINECONE_STORE_PATH / "sparse_encoder_ko-md-strict-multilingual-e5-large-instruct.pkl"
+
+    with open(SPARSE_PATH, "rb") as f:
+        sparse_encoder = pickle.load(f)
+
+    hybrid_retriever = PineconeKiwiHybridRetriever(
+        embeddings=embedding,
+        sparse_encoder=sparse_encoder,
+        index=index,
+        top_k=10,
+        alpha=0.5,             # Dense:Sparse 가중치
+        namespace=None,
+        pc=pc                  # Pinecone 객체 (rerank에 필요)
+    )
+    return hybrid_retriever
 
 if __name__ == "__main__":
     build_retriever(['hi there', 'hello world'])
