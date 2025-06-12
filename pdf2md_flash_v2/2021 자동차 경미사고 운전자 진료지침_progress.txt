@@ -1,0 +1,262 @@
+[2025-05-21 06:29:02] Starting to process PDF: 2021 자동차 경미사고 운전자 진료지침
+[2025-05-21 06:29:02] Total pages: 132
+[2025-05-21 06:29:02] Processing page 1 of 132
+[2025-05-21 06:29:07] Successfully processed page 1
+[2025-05-21 06:29:07] Processing page 2 of 132
+[2025-05-21 06:29:10] Processing page 3 of 132
+[2025-05-21 06:29:25] Successfully processed page 3
+[2025-05-21 06:29:25] Processing page 4 of 132
+[2025-05-21 06:29:34] Successfully processed page 4
+[2025-05-21 06:29:34] Processing page 5 of 132
+[2025-05-21 06:29:45] Successfully processed page 5
+[2025-05-21 06:29:45] Processing page 6 of 132
+[2025-05-21 06:29:47] Processing page 7 of 132
+[2025-05-21 06:29:50] Successfully processed page 7
+[2025-05-21 06:29:50] Processing page 8 of 132
+[2025-05-21 06:30:06] Successfully processed page 8
+[2025-05-21 06:30:06] Processing page 9 of 132
+[2025-05-21 06:30:13] Successfully processed page 9
+[2025-05-21 06:30:13] Processing page 10 of 132
+[2025-05-21 06:30:19] Successfully processed page 10
+[2025-05-21 06:30:19] Processing page 11 of 132
+[2025-05-21 06:30:26] Successfully processed page 11
+[2025-05-21 06:30:26] Processing page 12 of 132
+[2025-05-21 06:30:37] Successfully processed page 12
+[2025-05-21 06:30:37] Processing page 13 of 132
+[2025-05-21 06:30:48] Successfully processed page 13
+[2025-05-21 06:30:48] Processing page 14 of 132
+[2025-05-21 06:31:03] Successfully processed page 14
+[2025-05-21 06:31:03] Processing page 15 of 132
+[2025-05-21 06:31:12] Successfully processed page 15
+[2025-05-21 06:31:12] Processing page 16 of 132
+[2025-05-21 06:31:16] Successfully processed page 16
+[2025-05-21 06:31:16] Processing page 17 of 132
+[2025-05-21 06:31:31] Successfully processed page 17
+[2025-05-21 06:31:31] Processing page 18 of 132
+[2025-05-21 06:31:49] Successfully processed page 18
+[2025-05-21 06:31:49] Processing page 19 of 132
+[2025-05-21 06:31:58] Successfully processed page 19
+[2025-05-21 06:31:58] Processing page 20 of 132
+[2025-05-21 06:32:04] Successfully processed page 20
+[2025-05-21 06:32:04] Processing page 21 of 132
+[2025-05-21 06:32:12] Successfully processed page 21
+[2025-05-21 06:32:12] Processing page 22 of 132
+[2025-05-21 06:32:35] Successfully processed page 22
+[2025-05-21 06:32:35] Processing page 23 of 132
+[2025-05-21 06:32:43] Successfully processed page 23
+[2025-05-21 06:32:43] Processing page 24 of 132
+[2025-05-21 06:32:47] Processing page 25 of 132
+[2025-05-21 06:32:51] Successfully processed page 25
+[2025-05-21 06:32:51] Processing page 26 of 132
+[2025-05-21 06:33:13] Successfully processed page 26
+[2025-05-21 06:33:13] Processing page 27 of 132
+[2025-05-21 06:33:23] Successfully processed page 27
+[2025-05-21 06:33:23] Processing page 28 of 132
+[2025-05-21 06:33:34] Successfully processed page 28
+[2025-05-21 06:33:34] Processing page 29 of 132
+[2025-05-21 06:33:49] Successfully processed page 29
+[2025-05-21 06:33:49] Processing page 30 of 132
+[2025-05-21 06:33:53] Successfully processed page 30
+[2025-05-21 06:33:53] Processing page 31 of 132
+[2025-05-21 06:33:59] Successfully processed page 31
+[2025-05-21 06:33:59] Processing page 32 of 132
+[2025-05-21 06:34:32] Successfully processed page 32
+[2025-05-21 06:34:32] Processing page 33 of 132
+[2025-05-21 06:34:41] Successfully processed page 33
+[2025-05-21 06:34:41] Processing page 34 of 132
+[2025-05-21 06:34:51] Successfully processed page 34
+[2025-05-21 06:34:51] Processing page 35 of 132
+[2025-05-21 06:35:11] Successfully processed page 35
+[2025-05-21 06:35:11] Processing page 36 of 132
+[2025-05-21 06:35:17] Successfully processed page 36
+[2025-05-21 06:35:17] Processing page 37 of 132
+[2025-05-21 06:35:57] Successfully processed page 37
+[2025-05-21 06:35:57] Processing page 38 of 132
+[2025-05-21 06:36:09] Successfully processed page 38
+[2025-05-21 06:36:09] Processing page 39 of 132
+[2025-05-21 06:36:24] Successfully processed page 39
+[2025-05-21 06:36:24] Processing page 40 of 132
+[2025-05-21 06:36:57] Successfully processed page 40
+[2025-05-21 06:36:57] Processing page 41 of 132
+[2025-05-21 06:37:05] Successfully processed page 41
+[2025-05-21 06:37:05] Processing page 42 of 132
+[2025-05-21 06:37:10] Successfully processed page 42
+[2025-05-21 06:37:10] Processing page 43 of 132
+[2025-05-21 06:37:20] Successfully processed page 43
+[2025-05-21 06:37:20] Processing page 44 of 132
+[2025-05-21 06:37:31] Successfully processed page 44
+[2025-05-21 06:37:31] Processing page 45 of 132
+[2025-05-21 06:37:39] Successfully processed page 45
+[2025-05-21 06:37:39] Processing page 46 of 132
+[2025-05-21 06:37:49] Successfully processed page 46
+[2025-05-21 06:37:49] Processing page 47 of 132
+[2025-05-21 06:38:03] Successfully processed page 47
+[2025-05-21 06:38:03] Processing page 48 of 132
+[2025-05-21 06:38:22] Successfully processed page 48
+[2025-05-21 06:38:22] Processing page 49 of 132
+[2025-05-21 06:38:46] Successfully processed page 49
+[2025-05-21 06:38:46] Processing page 50 of 132
+[2025-05-21 06:39:00] Successfully processed page 50
+[2025-05-21 06:39:00] Processing page 51 of 132
+[2025-05-21 06:39:06] Processing page 52 of 132
+[2025-05-21 06:39:43] Successfully processed page 52
+[2025-05-21 06:39:43] Processing page 53 of 132
+[2025-05-21 06:40:04] Successfully processed page 53
+[2025-05-21 06:40:04] Processing page 54 of 132
+[2025-05-21 06:40:12] Successfully processed page 54
+[2025-05-21 06:40:12] Processing page 55 of 132
+[2025-05-21 06:40:28] Successfully processed page 55
+[2025-05-21 06:40:28] Processing page 56 of 132
+[2025-05-21 06:40:42] Successfully processed page 56
+[2025-05-21 06:40:42] Processing page 57 of 132
+[2025-05-21 06:40:56] Successfully processed page 57
+[2025-05-21 06:40:56] Processing page 58 of 132
+[2025-05-21 06:41:04] Successfully processed page 58
+[2025-05-21 06:41:04] Processing page 59 of 132
+[2025-05-21 06:41:11] Successfully processed page 59
+[2025-05-21 06:41:11] Processing page 60 of 132
+[2025-05-21 06:41:25] Successfully processed page 60
+[2025-05-21 06:41:25] Processing page 61 of 132
+[2025-05-21 06:41:39] Successfully processed page 61
+[2025-05-21 06:41:39] Processing page 62 of 132
+[2025-05-21 06:41:51] Successfully processed page 62
+[2025-05-21 06:41:51] Processing page 63 of 132
+[2025-05-21 06:42:04] Successfully processed page 63
+[2025-05-21 06:42:04] Processing page 64 of 132
+[2025-05-21 06:42:36] Successfully processed page 64
+[2025-05-21 06:42:36] Processing page 65 of 132
+[2025-05-21 06:43:14] Successfully processed page 65
+[2025-05-21 06:43:14] Processing page 66 of 132
+[2025-05-21 06:43:23] Successfully processed page 66
+[2025-05-21 06:43:23] Processing page 67 of 132
+[2025-05-21 06:43:46] Successfully processed page 67
+[2025-05-21 06:43:46] Processing page 68 of 132
+[2025-05-21 06:43:57] Successfully processed page 68
+[2025-05-21 06:43:57] Processing page 69 of 132
+[2025-05-21 06:44:12] Successfully processed page 69
+[2025-05-21 06:44:12] Processing page 70 of 132
+[2025-05-21 06:44:16] Successfully processed page 70
+[2025-05-21 06:44:16] Processing page 71 of 132
+[2025-05-21 06:44:23] Successfully processed page 71
+[2025-05-21 06:44:23] Processing page 72 of 132
+[2025-05-21 06:44:34] Successfully processed page 72
+[2025-05-21 06:44:34] Processing page 73 of 132
+[2025-05-21 06:44:45] Successfully processed page 73
+[2025-05-21 06:44:45] Processing page 74 of 132
+[2025-05-21 06:45:08] Successfully processed page 74
+[2025-05-21 06:45:08] Processing page 75 of 132
+[2025-05-21 06:45:13] Successfully processed page 75
+[2025-05-21 06:45:13] Processing page 76 of 132
+[2025-05-21 06:45:38] Successfully processed page 76
+[2025-05-21 06:45:38] Processing page 77 of 132
+[2025-05-21 06:46:11] Successfully processed page 77
+[2025-05-21 06:46:11] Processing page 78 of 132
+[2025-05-21 06:46:34] Successfully processed page 78
+[2025-05-21 06:46:34] Processing page 79 of 132
+[2025-05-21 06:46:48] Successfully processed page 79
+[2025-05-21 06:46:48] Processing page 80 of 132
+[2025-05-21 06:47:00] Successfully processed page 80
+[2025-05-21 06:47:00] Processing page 81 of 132
+[2025-05-21 06:47:13] Successfully processed page 81
+[2025-05-21 06:47:13] Processing page 82 of 132
+[2025-05-21 06:47:26] Successfully processed page 82
+[2025-05-21 06:47:26] Processing page 83 of 132
+[2025-05-21 06:47:32] Successfully processed page 83
+[2025-05-21 06:47:32] Processing page 84 of 132
+[2025-05-21 06:48:07] Successfully processed page 84
+[2025-05-21 06:48:07] Processing page 85 of 132
+[2025-05-21 06:48:17] Successfully processed page 85
+[2025-05-21 06:48:17] Processing page 86 of 132
+[2025-05-21 06:48:46] Successfully processed page 86
+[2025-05-21 06:48:46] Processing page 87 of 132
+[2025-05-21 06:49:04] Successfully processed page 87
+[2025-05-21 06:49:04] Processing page 88 of 132
+[2025-05-21 06:49:11] Successfully processed page 88
+[2025-05-21 06:49:11] Processing page 89 of 132
+[2025-05-21 06:49:19] Successfully processed page 89
+[2025-05-21 06:49:19] Processing page 90 of 132
+[2025-05-21 06:49:31] Successfully processed page 90
+[2025-05-21 06:49:31] Processing page 91 of 132
+[2025-05-21 06:49:51] Successfully processed page 91
+[2025-05-21 06:49:51] Processing page 92 of 132
+[2025-05-21 06:50:04] Successfully processed page 92
+[2025-05-21 06:50:04] Processing page 93 of 132
+[2025-05-21 06:50:14] Successfully processed page 93
+[2025-05-21 06:50:14] Processing page 94 of 132
+[2025-05-21 06:50:28] Successfully processed page 94
+[2025-05-21 06:50:28] Processing page 95 of 132
+[2025-05-21 06:50:38] Successfully processed page 95
+[2025-05-21 06:50:38] Processing page 96 of 132
+[2025-05-21 06:51:13] Successfully processed page 96
+[2025-05-21 06:51:13] Processing page 97 of 132
+[2025-05-21 06:51:41] Successfully processed page 97
+[2025-05-21 06:51:41] Processing page 98 of 132
+[2025-05-21 06:51:50] Successfully processed page 98
+[2025-05-21 06:51:50] Processing page 99 of 132
+[2025-05-21 06:51:53] Successfully processed page 99
+[2025-05-21 06:51:53] Processing page 100 of 132
+[2025-05-21 06:51:57] Processing page 101 of 132
+[2025-05-21 06:52:01] Successfully processed page 101
+[2025-05-21 06:52:01] Processing page 102 of 132
+[2025-05-21 06:52:09] Successfully processed page 102
+[2025-05-21 06:52:09] Processing page 103 of 132
+[2025-05-21 06:52:27] Successfully processed page 103
+[2025-05-21 06:52:27] Processing page 104 of 132
+[2025-05-21 06:52:34] Successfully processed page 104
+[2025-05-21 06:52:34] Processing page 105 of 132
+[2025-05-21 06:52:40] Successfully processed page 105
+[2025-05-21 06:52:40] Processing page 106 of 132
+[2025-05-21 06:53:05] Successfully processed page 106
+[2025-05-21 06:53:05] Processing page 107 of 132
+[2025-05-21 06:53:10] Successfully processed page 107
+[2025-05-21 06:53:10] Processing page 108 of 132
+[2025-05-21 06:53:27] Successfully processed page 108
+[2025-05-21 06:53:27] Processing page 109 of 132
+[2025-05-21 06:53:33] Successfully processed page 109
+[2025-05-21 06:53:33] Processing page 110 of 132
+[2025-05-21 06:53:48] Successfully processed page 110
+[2025-05-21 06:53:48] Processing page 111 of 132
+[2025-05-21 06:54:00] Successfully processed page 111
+[2025-05-21 06:54:00] Processing page 112 of 132
+[2025-05-21 06:54:17] Successfully processed page 112
+[2025-05-21 06:54:17] Processing page 113 of 132
+[2025-05-21 06:54:21] Successfully processed page 113
+[2025-05-21 06:54:21] Processing page 114 of 132
+[2025-05-21 06:54:28] Successfully processed page 114
+[2025-05-21 06:54:28] Processing page 115 of 132
+[2025-05-21 06:54:40] Successfully processed page 115
+[2025-05-21 06:54:40] Processing page 116 of 132
+[2025-05-21 06:54:49] Successfully processed page 116
+[2025-05-21 06:54:49] Processing page 117 of 132
+[2025-05-21 06:55:01] Successfully processed page 117
+[2025-05-21 06:55:01] Processing page 118 of 132
+[2025-05-21 06:55:19] Successfully processed page 118
+[2025-05-21 06:55:19] Processing page 119 of 132
+[2025-05-21 06:55:32] Successfully processed page 119
+[2025-05-21 06:55:32] Processing page 120 of 132
+[2025-05-21 06:55:40] Successfully processed page 120
+[2025-05-21 06:55:40] Processing page 121 of 132
+[2025-05-21 06:55:49] Successfully processed page 121
+[2025-05-21 06:55:49] Processing page 122 of 132
+[2025-05-21 06:55:56] Successfully processed page 122
+[2025-05-21 06:55:56] Processing page 123 of 132
+[2025-05-21 06:56:14] Successfully processed page 123
+[2025-05-21 06:56:14] Processing page 124 of 132
+[2025-05-21 06:56:23] Successfully processed page 124
+[2025-05-21 06:56:23] Processing page 125 of 132
+[2025-05-21 06:56:31] Successfully processed page 125
+[2025-05-21 06:56:31] Processing page 126 of 132
+[2025-05-21 06:56:41] Successfully processed page 126
+[2025-05-21 06:56:41] Processing page 127 of 132
+[2025-05-21 06:57:03] Successfully processed page 127
+[2025-05-21 06:57:03] Processing page 128 of 132
+[2025-05-21 06:57:06] Successfully processed page 128
+[2025-05-21 06:57:06] Processing page 129 of 132
+[2025-05-21 06:57:25] Successfully processed page 129
+[2025-05-21 06:57:25] Processing page 130 of 132
+[2025-05-21 06:57:56] Successfully processed page 130
+[2025-05-21 06:57:56] Processing page 131 of 132
+[2025-05-21 06:57:59] Successfully processed page 131
+[2025-05-21 06:57:59] Processing page 132 of 132
+[2025-05-21 06:58:06] Successfully processed page 132
+[2025-05-21 06:58:06] Completed processing 2021 자동차 경미사고 운전자 진료지침

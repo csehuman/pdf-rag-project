@@ -1,0 +1,80 @@
+[2025-05-21 06:58:06] Starting to process PDF: 2013 총담관결석 진료지침
+[2025-05-21 06:58:06] Total pages: 40
+[2025-05-21 06:58:06] Processing page 1 of 40
+[2025-05-21 06:58:10] Successfully processed page 1
+[2025-05-21 06:58:10] Processing page 2 of 40
+[2025-05-21 06:58:13] Successfully processed page 2
+[2025-05-21 06:58:13] Processing page 3 of 40
+[2025-05-21 06:58:17] Successfully processed page 3
+[2025-05-21 06:58:17] Processing page 4 of 40
+[2025-05-21 06:58:18] Processing page 5 of 40
+[2025-05-21 06:58:25] Successfully processed page 5
+[2025-05-21 06:58:25] Processing page 6 of 40
+[2025-05-21 06:58:44] Successfully processed page 6
+[2025-05-21 06:58:44] Processing page 7 of 40
+[2025-05-21 06:59:08] Successfully processed page 7
+[2025-05-21 06:59:08] Processing page 8 of 40
+[2025-05-21 06:59:25] Successfully processed page 8
+[2025-05-21 06:59:25] Processing page 9 of 40
+[2025-05-21 06:59:33] Successfully processed page 9
+[2025-05-21 06:59:33] Processing page 10 of 40
+[2025-05-21 06:59:48] Successfully processed page 10
+[2025-05-21 06:59:48] Processing page 11 of 40
+[2025-05-21 07:00:00] Successfully processed page 11
+[2025-05-21 07:00:00] Processing page 12 of 40
+[2025-05-21 07:00:12] Successfully processed page 12
+[2025-05-21 07:00:12] Processing page 13 of 40
+[2025-05-21 07:00:31] Successfully processed page 13
+[2025-05-21 07:00:31] Processing page 14 of 40
+[2025-05-21 07:01:01] Successfully processed page 14
+[2025-05-21 07:01:01] Processing page 15 of 40
+[2025-05-21 07:01:19] Successfully processed page 15
+[2025-05-21 07:01:19] Processing page 16 of 40
+[2025-05-21 07:02:10] Successfully processed page 16
+[2025-05-21 07:02:10] Processing page 17 of 40
+[2025-05-21 07:02:25] Processing page 18 of 40
+[2025-05-21 07:02:36] Successfully processed page 18
+[2025-05-21 07:02:36] Processing page 19 of 40
+[2025-05-21 07:02:46] Successfully processed page 19
+[2025-05-21 07:02:46] Processing page 20 of 40
+[2025-05-21 07:02:55] Successfully processed page 20
+[2025-05-21 07:02:55] Processing page 21 of 40
+[2025-05-21 07:03:16] Successfully processed page 21
+[2025-05-21 07:03:16] Processing page 22 of 40
+[2025-05-21 07:03:32] Successfully processed page 22
+[2025-05-21 07:03:32] Processing page 23 of 40
+[2025-05-21 07:03:40] Successfully processed page 23
+[2025-05-21 07:03:40] Processing page 24 of 40
+[2025-05-21 07:03:56] Successfully processed page 24
+[2025-05-21 07:03:56] Processing page 25 of 40
+[2025-05-21 07:04:09] Successfully processed page 25
+[2025-05-21 07:04:09] Processing page 26 of 40
+[2025-05-21 07:04:32] Successfully processed page 26
+[2025-05-21 07:04:32] Processing page 27 of 40
+[2025-05-21 07:05:19] Successfully processed page 27
+[2025-05-21 07:05:19] Processing page 28 of 40
+[2025-05-21 07:06:03] Processing page 29 of 40
+[2025-05-21 07:06:19] Successfully processed page 29
+[2025-05-21 07:06:19] Processing page 30 of 40
+[2025-05-21 07:06:42] Successfully processed page 30
+[2025-05-21 07:06:42] Processing page 31 of 40
+[2025-05-21 07:06:56] Successfully processed page 31
+[2025-05-21 07:06:56] Processing page 32 of 40
+[2025-05-21 07:07:18] Successfully processed page 32
+[2025-05-21 07:07:18] Processing page 33 of 40
+[2025-05-21 07:07:37] Successfully processed page 33
+[2025-05-21 07:07:37] Processing page 34 of 40
+[2025-05-21 07:08:00] Successfully processed page 34
+[2025-05-21 07:08:00] Processing page 35 of 40
+[2025-05-21 07:08:17] Successfully processed page 35
+[2025-05-21 07:08:17] Processing page 36 of 40
+[2025-05-21 07:08:38] Successfully processed page 36
+[2025-05-21 07:08:38] Processing page 37 of 40
+[2025-05-21 07:08:46] Successfully processed page 37
+[2025-05-21 07:08:46] Processing page 38 of 40
+[2025-05-21 07:09:02] Successfully processed page 38
+[2025-05-21 07:09:02] Processing page 39 of 40
+[2025-05-21 07:09:13] Successfully processed page 39
+[2025-05-21 07:09:13] Processing page 40 of 40
+[2025-05-21 07:09:22] Successfully processed page 40
+[2025-05-21 07:09:22] Completed processing 2013 총담관결석 진료지침

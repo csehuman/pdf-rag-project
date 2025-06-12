@@ -1,0 +1,127 @@
+[2025-05-21 07:09:22] Starting to process PDF: 2018 백내장 진료지침
+[2025-05-21 07:09:22] Total pages: 63
+[2025-05-21 07:09:22] Processing page 1 of 63
+[2025-05-21 07:09:24] Successfully processed page 1
+[2025-05-21 07:09:24] Processing page 2 of 63
+[2025-05-21 07:09:33] Successfully processed page 2
+[2025-05-21 07:09:33] Processing page 3 of 63
+[2025-05-21 07:10:00] Successfully processed page 3
+[2025-05-21 07:10:00] Processing page 4 of 63
+[2025-05-21 07:10:04] Successfully processed page 4
+[2025-05-21 07:10:04] Processing page 5 of 63
+[2025-05-21 07:10:12] Successfully processed page 5
+[2025-05-21 07:10:12] Processing page 6 of 63
+[2025-05-21 07:10:19] Successfully processed page 6
+[2025-05-21 07:10:19] Processing page 7 of 63
+[2025-05-21 07:10:29] Successfully processed page 7
+[2025-05-21 07:10:29] Processing page 8 of 63
+[2025-05-21 07:10:32] Successfully processed page 8
+[2025-05-21 07:10:32] Processing page 9 of 63
+[2025-05-21 07:10:47] Successfully processed page 9
+[2025-05-21 07:10:47] Processing page 10 of 63
+[2025-05-21 07:10:57] Successfully processed page 10
+[2025-05-21 07:10:57] Processing page 11 of 63
+[2025-05-21 07:10:59] Successfully processed page 11
+[2025-05-21 07:10:59] Processing page 12 of 63
+[2025-05-21 07:11:08] Successfully processed page 12
+[2025-05-21 07:11:08] Processing page 13 of 63
+[2025-05-21 07:11:15] Successfully processed page 13
+[2025-05-21 07:11:15] Processing page 14 of 63
+[2025-05-21 07:11:23] Successfully processed page 14
+[2025-05-21 07:11:23] Processing page 15 of 63
+[2025-05-21 07:11:32] Successfully processed page 15
+[2025-05-21 07:11:32] Processing page 16 of 63
+[2025-05-21 07:11:43] Successfully processed page 16
+[2025-05-21 07:11:43] Processing page 17 of 63
+[2025-05-21 07:11:48] Successfully processed page 17
+[2025-05-21 07:11:48] Processing page 18 of 63
+[2025-05-21 07:11:56] Successfully processed page 18
+[2025-05-21 07:11:56] Processing page 19 of 63
+[2025-05-21 07:12:04] Successfully processed page 19
+[2025-05-21 07:12:04] Processing page 20 of 63
+[2025-05-21 07:12:11] Successfully processed page 20
+[2025-05-21 07:12:11] Processing page 21 of 63
+[2025-05-21 07:12:18] Successfully processed page 21
+[2025-05-21 07:12:18] Processing page 22 of 63
+[2025-05-21 07:12:27] Successfully processed page 22
+[2025-05-21 07:12:27] Processing page 23 of 63
+[2025-05-21 07:12:35] Successfully processed page 23
+[2025-05-21 07:12:35] Processing page 24 of 63
+[2025-05-21 07:12:45] Successfully processed page 24
+[2025-05-21 07:12:45] Processing page 25 of 63
+[2025-05-21 07:12:55] Successfully processed page 25
+[2025-05-21 07:12:55] Processing page 26 of 63
+[2025-05-21 07:13:07] Successfully processed page 26
+[2025-05-21 07:13:07] Processing page 27 of 63
+[2025-05-21 07:13:15] Successfully processed page 27
+[2025-05-21 07:13:15] Processing page 28 of 63
+[2025-05-21 07:13:23] Successfully processed page 28
+[2025-05-21 07:13:23] Processing page 29 of 63
+[2025-05-21 07:13:31] Successfully processed page 29
+[2025-05-21 07:13:31] Processing page 30 of 63
+[2025-05-21 07:13:41] Successfully processed page 30
+[2025-05-21 07:13:41] Processing page 31 of 63
+[2025-05-21 07:13:46] Successfully processed page 31
+[2025-05-21 07:13:46] Processing page 32 of 63
+[2025-05-21 07:13:53] Successfully processed page 32
+[2025-05-21 07:13:53] Processing page 33 of 63
+[2025-05-21 07:14:03] Successfully processed page 33
+[2025-05-21 07:14:03] Processing page 34 of 63
+[2025-05-21 07:14:18] Successfully processed page 34
+[2025-05-21 07:14:18] Processing page 35 of 63
+[2025-05-21 07:14:29] Successfully processed page 35
+[2025-05-21 07:14:29] Processing page 36 of 63
+[2025-05-21 07:14:38] Successfully processed page 36
+[2025-05-21 07:14:38] Processing page 37 of 63
+[2025-05-21 07:14:47] Successfully processed page 37
+[2025-05-21 07:14:47] Processing page 38 of 63
+[2025-05-21 07:14:55] Successfully processed page 38
+[2025-05-21 07:14:55] Processing page 39 of 63
+[2025-05-21 07:15:09] Successfully processed page 39
+[2025-05-21 07:15:09] Processing page 40 of 63
+[2025-05-21 07:15:18] Successfully processed page 40
+[2025-05-21 07:15:18] Processing page 41 of 63
+[2025-05-21 07:15:28] Processing page 42 of 63
+[2025-05-21 07:15:42] Successfully processed page 42
+[2025-05-21 07:15:42] Processing page 43 of 63
+[2025-05-21 07:15:51] Successfully processed page 43
+[2025-05-21 07:15:51] Processing page 44 of 63
+[2025-05-21 07:16:01] Successfully processed page 44
+[2025-05-21 07:16:01] Processing page 45 of 63
+[2025-05-21 07:16:11] Successfully processed page 45
+[2025-05-21 07:16:11] Processing page 46 of 63
+[2025-05-21 07:16:16] Successfully processed page 46
+[2025-05-21 07:16:16] Processing page 47 of 63
+[2025-05-21 07:16:25] Successfully processed page 47
+[2025-05-21 07:16:25] Processing page 48 of 63
+[2025-05-21 07:16:33] Successfully processed page 48
+[2025-05-21 07:16:33] Processing page 49 of 63
+[2025-05-21 07:16:41] Successfully processed page 49
+[2025-05-21 07:16:41] Processing page 50 of 63
+[2025-05-21 07:16:47] Successfully processed page 50
+[2025-05-21 07:16:47] Processing page 51 of 63
+[2025-05-21 07:16:52] Successfully processed page 51
+[2025-05-21 07:16:52] Processing page 52 of 63
+[2025-05-21 07:17:01] Successfully processed page 52
+[2025-05-21 07:17:01] Processing page 53 of 63
+[2025-05-21 07:17:07] Successfully processed page 53
+[2025-05-21 07:17:07] Processing page 54 of 63
+[2025-05-21 07:17:14] Successfully processed page 54
+[2025-05-21 07:17:14] Processing page 55 of 63
+[2025-05-21 07:17:23] Successfully processed page 55
+[2025-05-21 07:17:23] Processing page 56 of 63
+[2025-05-21 07:17:32] Successfully processed page 56
+[2025-05-21 07:17:32] Processing page 57 of 63
+[2025-05-21 07:17:42] Processing page 58 of 63
+[2025-05-21 07:17:58] Successfully processed page 58
+[2025-05-21 07:17:58] Processing page 59 of 63
+[2025-05-21 07:18:06] Successfully processed page 59
+[2025-05-21 07:18:06] Processing page 60 of 63
+[2025-05-21 07:18:11] Successfully processed page 60
+[2025-05-21 07:18:11] Processing page 61 of 63
+[2025-05-21 07:18:20] Successfully processed page 61
+[2025-05-21 07:18:20] Processing page 62 of 63
+[2025-05-21 07:18:27] Successfully processed page 62
+[2025-05-21 07:18:27] Processing page 63 of 63
+[2025-05-21 07:18:36] Successfully processed page 63
+[2025-05-21 07:18:36] Completed processing 2018 백내장 진료지침
