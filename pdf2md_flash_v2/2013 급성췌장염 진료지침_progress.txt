@@ -1,0 +1,112 @@
+[2025-05-21 11:21:13] Starting to process PDF: 2013 급성췌장염 진료지침
+[2025-05-21 11:21:13] Total pages: 57
+[2025-05-21 11:21:13] Processing page 1 of 57
+[2025-05-21 11:21:19] Successfully processed page 1
+[2025-05-21 11:21:19] Processing page 2 of 57
+[2025-05-21 11:21:22] Processing page 3 of 57
+[2025-05-21 11:21:30] Successfully processed page 3
+[2025-05-21 11:21:30] Processing page 4 of 57
+[2025-05-21 11:21:34] Processing page 5 of 57
+[2025-05-21 11:21:46] Successfully processed page 5
+[2025-05-21 11:21:46] Processing page 6 of 57
+[2025-05-21 11:21:57] Successfully processed page 6
+[2025-05-21 11:21:57] Processing page 7 of 57
+[2025-05-21 11:22:10] Successfully processed page 7
+[2025-05-21 11:22:10] Processing page 8 of 57
+[2025-05-21 11:22:14] Processing page 9 of 57
+[2025-05-21 11:22:23] Successfully processed page 9
+[2025-05-21 11:22:23] Processing page 10 of 57
+[2025-05-21 11:22:36] Successfully processed page 10
+[2025-05-21 11:22:36] Processing page 11 of 57
+[2025-05-21 11:22:55] Successfully processed page 11
+[2025-05-21 11:22:55] Processing page 12 of 57
+[2025-05-21 11:23:07] Successfully processed page 12
+[2025-05-21 11:23:07] Processing page 13 of 57
+[2025-05-21 11:23:19] Successfully processed page 13
+[2025-05-21 11:23:19] Processing page 14 of 57
+[2025-05-21 11:23:29] Successfully processed page 14
+[2025-05-21 11:23:29] Processing page 15 of 57
+[2025-05-21 11:23:46] Successfully processed page 15
+[2025-05-21 11:23:46] Processing page 16 of 57
+[2025-05-21 11:24:01] Successfully processed page 16
+[2025-05-21 11:24:01] Processing page 17 of 57
+[2025-05-21 11:24:21] Successfully processed page 17
+[2025-05-21 11:24:21] Processing page 18 of 57
+[2025-05-21 11:24:34] Successfully processed page 18
+[2025-05-21 11:24:34] Processing page 19 of 57
+[2025-05-21 11:24:42] Successfully processed page 19
+[2025-05-21 11:24:42] Processing page 20 of 57
+[2025-05-21 11:24:51] Successfully processed page 20
+[2025-05-21 11:24:51] Processing page 21 of 57
+[2025-05-21 11:25:06] Successfully processed page 21
+[2025-05-21 11:25:06] Processing page 22 of 57
+[2025-05-21 11:25:18] Successfully processed page 22
+[2025-05-21 11:25:18] Processing page 23 of 57
+[2025-05-21 11:25:31] Successfully processed page 23
+[2025-05-21 11:25:31] Processing page 24 of 57
+[2025-05-21 11:25:43] Successfully processed page 24
+[2025-05-21 11:25:43] Processing page 25 of 57
+[2025-05-21 11:26:22] Successfully processed page 25
+[2025-05-21 11:26:22] Processing page 26 of 57
+[2025-05-21 11:26:36] Successfully processed page 26
+[2025-05-21 11:26:36] Processing page 27 of 57
+[2025-05-21 11:26:57] Successfully processed page 27
+[2025-05-21 11:26:57] Processing page 28 of 57
+[2025-05-21 11:27:07] Successfully processed page 28
+[2025-05-21 11:27:07] Processing page 29 of 57
+[2025-05-21 11:27:22] Successfully processed page 29
+[2025-05-21 11:27:22] Processing page 30 of 57
+[2025-05-21 11:27:30] Successfully processed page 30
+[2025-05-21 11:27:30] Processing page 31 of 57
+[2025-05-21 11:27:41] Successfully processed page 31
+[2025-05-21 11:27:41] Processing page 32 of 57
+[2025-05-21 11:27:44] Successfully processed page 32
+[2025-05-21 11:27:44] Processing page 33 of 57
+[2025-05-21 11:27:50] Successfully processed page 33
+[2025-05-21 11:27:50] Processing page 34 of 57
+[2025-05-21 11:28:02] Successfully processed page 34
+[2025-05-21 11:28:02] Processing page 35 of 57
+[2025-05-21 11:28:15] Successfully processed page 35
+[2025-05-21 11:28:15] Processing page 36 of 57
+[2025-05-21 11:28:33] Successfully processed page 36
+[2025-05-21 11:28:33] Processing page 37 of 57
+[2025-05-21 11:28:43] Successfully processed page 37
+[2025-05-21 11:28:43] Processing page 38 of 57
+[2025-05-21 11:28:57] Successfully processed page 38
+[2025-05-21 11:28:57] Processing page 39 of 57
+[2025-05-21 11:29:10] Successfully processed page 39
+[2025-05-21 11:29:10] Processing page 40 of 57
+[2025-05-21 11:29:26] Successfully processed page 40
+[2025-05-21 11:29:26] Processing page 41 of 57
+[2025-05-21 11:29:29] Successfully processed page 41
+[2025-05-21 11:29:29] Processing page 42 of 57
+[2025-05-21 11:29:31] Processing page 43 of 57
+[2025-05-21 11:29:46] Successfully processed page 43
+[2025-05-21 11:29:46] Processing page 44 of 57
+[2025-05-21 11:30:05] Successfully processed page 44
+[2025-05-21 11:30:05] Processing page 45 of 57
+[2025-05-21 11:30:13] Successfully processed page 45
+[2025-05-21 11:30:13] Processing page 46 of 57
+[2025-05-21 11:30:28] Successfully processed page 46
+[2025-05-21 11:30:28] Processing page 47 of 57
+[2025-05-21 11:30:40] Successfully processed page 47
+[2025-05-21 11:30:40] Processing page 48 of 57
+[2025-05-21 11:30:56] Successfully processed page 48
+[2025-05-21 11:30:56] Processing page 49 of 57
+[2025-05-21 11:31:09] Successfully processed page 49
+[2025-05-21 11:31:09] Processing page 50 of 57
+[2025-05-21 11:31:23] Successfully processed page 50
+[2025-05-21 11:31:23] Processing page 51 of 57
+[2025-05-21 11:31:36] Successfully processed page 51
+[2025-05-21 11:31:36] Processing page 52 of 57
+[2025-05-21 11:31:46] Successfully processed page 52
+[2025-05-21 11:31:46] Processing page 53 of 57
+[2025-05-21 11:31:54] Successfully processed page 53
+[2025-05-21 11:31:54] Processing page 54 of 57
+[2025-05-21 11:32:04] Processing page 55 of 57
+[2025-05-21 11:32:12] Successfully processed page 55
+[2025-05-21 11:32:12] Processing page 56 of 57
+[2025-05-21 11:32:18] Successfully processed page 56
+[2025-05-21 11:32:18] Processing page 57 of 57
+[2025-05-21 11:32:30] Successfully processed page 57
+[2025-05-21 11:32:30] Completed processing 2013 급성췌장염 진료지침
