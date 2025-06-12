@@ -57,6 +57,7 @@ embedding = dynamic_import(embedding_conf['module'], embedding_conf['functions']
 
 load_all_pdfs = parser['load_all_pdfs']
 load_retriever = modules['retriever']['load_retriever']
+load_retriever_2 = modules['retriever']['load_retrieval_2']
 create_medical_chain = modules['chains']['create_medical_chain']
 get_chain_response = modules['chains']['get_chain_response']
 create_ollama_llm = modules['chains']['create_ollama_llm']
@@ -67,7 +68,7 @@ load_env()
 
 # documents = load_all_pdfs("pdf_data")
 documents = load_parsed_markdown("data/processed")
-retriever = load_retriever(k=5)
+retriever = load_retriever_2()
 llm = create_ollama_llm()
 qa_chain = create_medical_chain(retriever=retriever, llm=llm)
 
@@ -82,10 +83,11 @@ for item in dataset:
     chat_history = [] 
     docs = retriever.get_relevant_documents(question)
     answer = get_chain_response(qa_chain, prompt, chat_history, docs)
+    # print(docs)
     
     sample = SingleTurnSample(
         user_input=question,
-        retrieved_contexts=[clean_context(c) for c in [doc.page_content for doc in docs]],
+        retrieved_contexts=[doc.page_content for doc in docs],
         reference=item["reference_answer"],
         response=answer
     )
@@ -95,3 +97,4 @@ for item in dataset:
 dataset = EvaluationDataset(samples=predictions)
 score = evaluate(dataset, metrics = [faithfulness, context_recall, answer_correctness])
 print(score)
+
