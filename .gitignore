@@ -2,7 +2,7 @@
 
 # 데이터 및 모델 파일
 data/documents/
-data/processed/
+# data/processed/
 data/prompts/
 
 models/

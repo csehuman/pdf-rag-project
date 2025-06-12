@@ -68,7 +68,7 @@ load_env()
 
 # documents = load_all_pdfs("pdf_data")
 documents = load_parsed_markdown("data/processed")
-retriever = load_retriever_2()
+retriever = load_retriever()
 llm = create_ollama_llm()
 qa_chain = create_medical_chain(retriever=retriever, llm=llm)
 
@@ -83,7 +83,7 @@ for item in dataset:
     chat_history = [] 
     docs = retriever.get_relevant_documents(question)
     answer = get_chain_response(qa_chain, prompt, chat_history, docs)
-    # print(docs)
+    print(docs)
     
     sample = SingleTurnSample(
         user_input=question,

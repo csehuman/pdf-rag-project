@@ -60,7 +60,7 @@ def load_retriever(k: int = 5):
 
 def load_retrieval_2():
     api_key = os.getenv("PINECONE_API_KEY")
-    INDEX_NAME = "ko-no-md-bge-m3-ko"
+    INDEX_NAME = "ko-md-loosen-bge-m3-ko"
     MODEL_NAME = "dragonkue/bge-m3-ko"
 
     # 1. Dense Retriever
