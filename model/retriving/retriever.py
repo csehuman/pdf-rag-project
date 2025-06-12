@@ -7,6 +7,8 @@ from langchain_community.vectorstores import FAISS
 from langchain_community.embeddings import HuggingFaceEmbeddings
 from utils.env_loader import load_env
 from utils.import_loader import load_config, dynamic_import
+from pinecone import Pinecone
+from langchain_pinecone import PineconeVectorStore
 
 
 import os
@@ -54,6 +56,20 @@ def load_retriever(k: int = 5):
         allow_dangerous_deserialization=True
     )
     return vs.as_retriever(search_kwargs={"k": k})
+
+
+def load_retrieval_2():
+    api_key = "pcsk_7KjBdR_M9Mq2RACW27i4JrRcRufDw5SpWadyhgN92YLzJ6gb32R6eJwLF5nwPkdKqovepe"
+    INDEX_NAME = "ko-no-md-bge-m3-ko"
+    MODEL_NAME = "dragonkue/bge-m3-ko"
+
+    # 1. Dense Retriever
+    pc = Pinecone(api_key=api_key, pool_threads=10)
+    index = pc.Index(INDEX_NAME)
+    embedding = HuggingFaceEmbeddings(model_name=MODEL_NAME)
+    vectorstore = PineconeVectorStore(index=index, embedding=embedding, text_key="context")
+    dense_retriever = vectorstore.as_retriever(search_kwargs={"k": 10})
+    return dense_retriever 
 
 if __name__ == "__main__":
     build_retriever(['hi there', 'hello world'])

@@ -33,6 +33,7 @@ modules:
     module: model.retriving.retriever
     functions:
       - load_retriever
+      - load_retrieval_2
   chains:
     module: model.chains
     functions:
