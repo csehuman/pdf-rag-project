@@ -77,7 +77,9 @@ def hybrid_retriever(index_name, model_name):
     index = pc.Index(index_name)
     embedding = HuggingFaceEmbeddings(model_name=model_name)
 
-    SPARSE_PATH = PINECONE_STORE_PATH / "sparse_encoder_ko-md-strict-multilingual-e5-large-instruct.pkl"
+    config = load_config()
+    SPARSE_PATH = PINECONE_STORE_PATH / f"sparse_encoder_{config['pinecone']['index_name']}.pkl"
+    print(f"Loading from: {SPARSE_PATH}")
 
     with open(SPARSE_PATH, "rb") as f:
         sparse_encoder = pickle.load(f)
