@@ -33,5 +33,4 @@ def main(config_path="pc_config.yaml"):
         print("❌ 오류 발생:", e)
 
 if __name__ == "__main__":
-    os.environ["OLLAMA_BASE_URL"] = "http://34.170.17.36:8888"
     main()
