@@ -239,7 +239,7 @@ class PineconeKiwiHybridRetriever(BaseRetriever):
         Returns:
             List[Document]: 재정렬된 문서 리스트
         """
-        # print("[rerank_documents]")
+        print("[rerank_documents]")
         options = kwargs.get("search_kwargs", {})
         rerank_model = options.get("rerank_model", "bge-reranker-v2-m3")
         top_n = options.get("top_n", len(documents))

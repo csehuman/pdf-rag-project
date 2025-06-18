@@ -9,6 +9,7 @@ from ragas.metrics import context_recall, faithfulness, answer_correctness
 from ragas.llms import LangchainLLMWrapper
 from ragas import EvaluationDataset, SingleTurnSample
 from utils.env_loader import load_env
+from kiwi import *
 
 def load_parsed_markdown(directory: str):
     documents = []
@@ -58,6 +59,7 @@ embedding = dynamic_import(embedding_conf['module'], embedding_conf['functions']
 load_all_pdfs = parser['load_all_pdfs']
 load_retriever = modules['retriever']['load_retriever']
 dense_retriever = modules['retriever']['dense_retriever']
+weight_retriever = modules['retriever']['weight_retriever']
 hybrid_retriever = modules['retriever']['hybrid_retriever']
 create_medical_chain = modules['chains']['create_medical_chain']
 get_chain_response = modules['chains']['get_chain_response']
@@ -70,8 +72,14 @@ load_env()
 # documents = load_all_pdfs("pdf_data")
 documents = load_parsed_markdown("data/processed")
 
-retriever = dense_retriever(index_name=config['pinecone']['index_name'], model_name=config['pinecone']['model_name'])
+# retriever = dense_retriever(index_name=config['pinecone']['index_name'], model_name=config['pinecone']['model_name'])
 # retriever = hybrid_retriever(index_name=config['pinecone']['index_name'], model_name=config['pinecone']['model_name'])
+retriever: PineconeKiwiHybridRetriever = weight_retriever(
+    weight=config['retriving']['weight'], 
+    index_name=config['pinecone']['index_name'], 
+    model_name=config['pinecone']['model_name'], 
+    topK = config['retriving']['topk']
+    )
 
 llm = create_ollama_llm()
 qa_chain = create_medical_chain(retriever=retriever, llm=llm)
@@ -86,8 +94,8 @@ for item in dataset:
     prompt = question
     chat_history = []
     docs = retriever.get_relevant_documents(question)
+    # docs = retriever._rerank_documents(question, docs)
     answer = get_chain_response(qa_chain, prompt, chat_history, docs)
-    print(docs)
     
     sample = SingleTurnSample(
         user_input=question,
