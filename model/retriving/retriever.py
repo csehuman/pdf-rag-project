@@ -25,7 +25,7 @@ PINECONE_STORE_PATH = PROJECT_ROOT / "data" / "pinecone_store"
 config = load_config()
 
 # BASE_DIR = config['paths']['root']
-embedding_conf = config['modules']['embeddings']
+# embedding_conf = config['modules']['embeddings']
 # EMBED_MODEL_INSTANCE = HuggingFaceEmbedding(model_name="dragonkue/BGE-m3-ko")
 EMBED_MODEL_INSTANCE  = HuggingFaceEmbeddings(
     model_name="dragonkue/BGE-m3-ko",
@@ -62,13 +62,34 @@ def load_retriever(k: int = 5):
 
 def dense_retriever(index_name, model_name):
     api_key = os.getenv("PINECONE_API_KEY")
-
-    # 1. Dense Retriever
     pc = Pinecone(api_key=api_key, pool_threads=10)
     index = pc.Index(index_name)
     embedding = HuggingFaceEmbeddings(model_name=model_name)
     vectorstore = PineconeVectorStore(index=index, embedding=embedding, text_key="context")
     return vectorstore.as_retriever(search_kwargs={"k": 10})
+
+
+def weight_retriever(weight, index_name, model_name, topK):
+    api_key = os.getenv("PINECONE_API_KEY")
+    pc = Pinecone(api_key=api_key, pool_threads=10)
+    index = pc.Index(index_name)
+    embedding = HuggingFaceEmbeddings(model_name=model_name)
+
+    config = load_config()
+    SPARSE_PATH = PINECONE_STORE_PATH / f"sparse_encoder_{config['pinecone']['index_name']}.pkl"
+    with open(SPARSE_PATH, "rb") as f:
+        sparse_encoder = pickle.load(f)
+
+    sparse_retriever = PineconeKiwiHybridRetriever(
+        embeddings=embedding,
+        sparse_encoder=sparse_encoder,
+        index=index,
+        top_k=topK,
+        alpha=weight,             # Dense:Sparse 가중치
+        namespace=None,
+        pc=pc                  # Pinecone 객체 (rerank에 필요)
+    )
+    return sparse_retriever
 
 def hybrid_retriever(index_name, model_name):
     api_key = os.getenv("PINECONE_API_KEY")

@@ -11,8 +11,12 @@ indexing:
   model_name: sentence-transformers/all-MiniLM-L6-v2
   batch_size: 64
 
+retriving:
+  topk: 10
+  weight: 0.7
+
 pinecone:
-  index_name: ko-md-strict-multilingual-e5-large-instruct
+  index_name: ko-no-md-multilingual-e5-large-instruct
   model_name: intfloat/multilingual-e5-large-instruct
 
 modules:
@@ -40,6 +44,7 @@ modules:
       - load_retriever
       - dense_retriever
       - hybrid_retriever
+      - weight_retriever
   chains:
     module: model.chains
     functions:
