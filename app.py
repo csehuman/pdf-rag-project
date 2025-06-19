@@ -2,14 +2,26 @@ import streamlit as st
 import time
 from typing import List, Dict
 from utils.import_loader import load_modules_from_config
-modules = load_modules_from_config()
+from utils.import_loader import load_config, dynamic_import
+import sys
 
-load_retriever = modules['retriever']['load_retriever']
-create_classifier_chain = modules['chains']['create_classifier_chain']
+# print("APP #1")
+config = load_config()
+# print("APP #2")
+modules = load_modules_from_config()
+# print("APP #3")
+# parser_conf = config['modules']['parser']
+# embedding_conf = config['modules']['embeddings']
+# parser = dynamic_import(parser_conf['module'], parser_conf['functions'])
+# embedding = dynamic_import(embedding_conf['module'], embedding_conf['functions'])
+
+hybrid_retriever = modules['retriever']['hybrid_retriever']
 create_medical_chain = modules['chains']['create_medical_chain']
-create_general_chain = modules['chains']['create_general_chain']
 get_chain_response = modules['chains']['get_chain_response']
 create_ollama_llm = modules['chains']['create_ollama_llm']
+create_openai_llm = modules['chains'].get('create_openai_llm')
+# print("APP #4")
+# embed_texts = embedding['embed_texts']
 
 # Set page config
 st.set_page_config(
@@ -17,6 +29,7 @@ st.set_page_config(
     page_icon="📚",
     layout="wide"
 )
+# print("APP #5")
 
 # Initialize session state for chat history
 if "messages" not in st.session_state:
@@ -33,16 +46,24 @@ def format_chat_history(messages: List[Dict]) -> str:
 # Initialize components
 @st.cache_resource
 def load_components():
-    llm = create_ollama_llm()
-    retriever = load_retriever(k=5)
-    classifier_chain = create_classifier_chain(llm)
-    medical_chain = create_medical_chain(llm, retriever)
-    general_chain = create_general_chain(llm)
-    return retriever, classifier_chain, medical_chain, general_chain
+    # Select LLM based on command-line argument
+    if 'gpt' in sys.argv and create_openai_llm is not None:
+        # print("LOAD LLM - GPT")
+        llm = create_openai_llm()
+        # print("GPT model loaded")
+    else:
+        llm = create_ollama_llm()
+    # print("DEFINING RETRIEVER")
+    retriever = hybrid_retriever(index_name=config['pinecone']['index_name'], model_name=config['pinecone']['model_name'])
+    # print("DEFINING CHAIN")
+    qa_chain = create_medical_chain(retriever=retriever, llm=llm)
+    return retriever, qa_chain
 
 # Load components
 with st.spinner("Loading components..."):
-    retriever, classifier_chain, medical_chain, general_chain = load_components()
+    # print("APP #6")
+    retriever, qa_chain = load_components()
+    # print("APP #7")
 
 # Title and description
 st.title("📚 PDF RAG Chat")
@@ -74,21 +95,12 @@ if prompt := st.chat_input("What would you like to know?"):
             chat_history = format_chat_history(st.session_state.messages[:-1])
             
             # Step 1: Classify the question
-            message_placeholder.markdown("🤔 질문을 분석하고 있습니다...")
-            
-            classification = get_chain_response(classifier_chain, prompt, chat_history)
-            category = classification.split("\n")[0].replace("CATEGORY:", "").strip()
-            
-            # Step 2: Process based on classification
-            if category == "1":  # Medical question
-                message_placeholder.markdown("🔍 의료 진료지침 문서를 검색 중입니다...")
-                with st.spinner("관련 의료 정보를 찾고 있습니다..."):
-                    documents = retriever.get_relevant_documents(prompt)
-                    response = get_chain_response(medical_chain, prompt, chat_history, documents)
-            else:  # General or conversation-related question
-                message_placeholder.markdown("💭 답변을 생성하고 있습니다...")
-                response = get_chain_response(general_chain, prompt, chat_history)
-            
+            message_placeholder.markdown("🔍 의료 진료지침 문서를 검색 중입니다...")
+            with st.spinner("관련 의료 정보를 찾고 있습니다..."):
+                documents = retriever.get_relevant_documents(prompt)
+                print(documents)
+                response = get_chain_response(qa_chain, prompt, chat_history, documents)   
+                print(response) 
             # Clear status message
             message_placeholder.empty()
             
