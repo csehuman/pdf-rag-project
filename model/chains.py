@@ -4,8 +4,10 @@ from langchain_community.llms import Ollama
 from langchain.chains import StuffDocumentsChain
 from typing import Optional
 from utils.env_loader import load_env
+from dotenv import load_dotenv
 from langchain_openai import ChatOpenAI
 
+load_dotenv()
 
 def create_ollama_llm():
     """Create Ollama LLM instance using environment settings."""
