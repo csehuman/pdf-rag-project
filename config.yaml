@@ -12,7 +12,7 @@ indexing:
   batch_size: 64
 
 pinecone:
-  index_name: ko-md-strict-multilingual-e5-large-instruct
+  index_name: ko-no-md-multilingual-e5-large-instruct
   model_name: intfloat/multilingual-e5-large-instruct
 
 modules:
@@ -48,3 +48,4 @@ modules:
       - create_general_chain
       - get_chain_response
       - create_ollama_llm
+      - create_openai_llm

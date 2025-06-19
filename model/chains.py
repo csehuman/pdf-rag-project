@@ -4,6 +4,7 @@ from langchain_community.llms import Ollama
 from langchain.chains import StuffDocumentsChain
 from typing import Optional
 from utils.env_loader import load_env
+from langchain_openai import ChatOpenAI
 
 
 def create_ollama_llm():
@@ -12,6 +13,18 @@ def create_ollama_llm():
     return Ollama(
         model=model_name,
         base_url=base_url,
+        temperature=0
+    )
+
+def create_openai_llm():
+    """Create OpenAI LLM instance using environment settings."""
+    import os
+    api_key = os.getenv("OPENAI_API_KEY")
+    if not api_key:
+        raise ValueError("OPENAI_API_KEY not found in environment variables")
+    return ChatOpenAI(
+        openai_api_key=api_key,
+        model="gpt-4.1-2025-04-14",
         temperature=0
     )
 
